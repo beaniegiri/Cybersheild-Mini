@@ -1,4 +1,9 @@
 {
-    "abusive_words_found": [],
-    "text_analyzed": "Why are you so dumb?"
+    "abusive_words_found": [
+        {
+            "word": "hate",
+            "severity": "high"
+        }
+    ],
+    "text_analyzed": "I hate nothing"
 }

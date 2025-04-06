@@ -14,7 +14,7 @@ def detect_abuse(text, abusive_words):
         if word in words_in_text:
             detected.append({
                 "word": word,
-                "severity": "high"  # Simple rule for now
+                "severity": "high"  
             })
     
     return {

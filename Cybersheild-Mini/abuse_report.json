@@ -1,0 +1,9 @@
+{
+    "abusive-words-found": [
+        {
+            "word": "hate",
+            "severity": "high",
+            "text_analyzed": "i hate you"
+        }
+    ]
+}

@@ -1,9 +1,0 @@
-{
-    "abusive_words_found": [
-        {
-            "word": "hate",
-            "severity": "high"
-        }
-    ],
-    "text_analyzed": "I hate nothing"
-}

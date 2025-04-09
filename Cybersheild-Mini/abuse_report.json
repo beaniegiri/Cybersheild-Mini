@@ -1,9 +1,8 @@
 {
-    "abusive-words-found": [
-        {
-            "word": "hate",
-            "severity": "high",
-            "text_analyzed": "i hate you"
-        }
-    ]
+    "abusive-words_found": [],
+    "sentiment": {
+        "sentiment": "NEGATIVE",
+        "confidence": 0.993
+    },
+    "text_analyze": "halt die frisse"
 }

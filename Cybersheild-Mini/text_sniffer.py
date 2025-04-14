@@ -50,21 +50,21 @@ def detect_abuse(text, abusive_words):
     
 
 # Step 4: Main function (runs when script is executed)
-if __name__ == "__main__":
-    # Load abusive words
-    abusive_words = load_abusive_words("abusive_words.txt")
+# if __name__ == "__main__":
+#     # Load abusive words
+#     abusive_words = load_abusive_words("abusive_words.txt")
     
-    # Ask user for input
-    user_text = input("Enter text to analyze: ")
+#     # Ask user for input
+#     user_text = input("Enter text to analyze: ")
     
-    # Detect abusive words
-    report = detect_abuse(user_text, abusive_words)
+#     # Detect abusive words
+#     report = detect_abuse(user_text, abusive_words)
     
-    # Save report to JSON
-    with open("abuse_report.json", "w") as f:
-        json.dump(report, f, indent=4)  # `indent=4` makes JSON readable
+#     # Save report to JSON
+#     with open("abuse_report.json", "w") as f:
+#         json.dump(report, f, indent=4)  # `indent=4` makes JSON readable
     
-    print("Analysis complete! Report saved to 'abuse_report.json'.")
+#     print("Analysis complete! Report saved to 'abuse_report.json'.")
 
     
     

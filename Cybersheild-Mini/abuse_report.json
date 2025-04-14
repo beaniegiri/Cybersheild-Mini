@@ -1,8 +1,36 @@
 {
-    "abusive-words_found": [],
-    "sentiment": {
-        "sentiment": "NEGATIVE",
-        "confidence": 0.993
+    "1": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "POSITIVE",
+            "confidence": 0.996
+        },
+        "text_analyze": "hallo"
     },
-    "text_analyze": "halt die frisse"
+    "2": {
+        "abusive-words-found": [
+            {
+                "word": "stupid",
+                "severity": "high",
+                "text_analyzed": "You are stupid",
+                "sentiment": {
+                    "sentiment": "NEGATIVE",
+                    "confidence": 1.0
+                }
+            }
+        ]
+    },
+    "3": {
+        "abusive-words-found": [
+            {
+                "word": "dumb",
+                "severity": "high",
+                "text_analyzed": "Schiesse! du bist dumb",
+                "sentiment": {
+                    "sentiment": "NEGATIVE",
+                    "confidence": 1.0
+                }
+            }
+        ]
+    }
 }

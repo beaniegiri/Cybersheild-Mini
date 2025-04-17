@@ -10,7 +10,9 @@
     "2": {
         "abusive-words-found": [
             {
-                "word": "stupid",
+                "word_in_text": "stupid",
+                "matched_with": "stupid",
+                "similarity": 1.0,
                 "severity": "high",
                 "text_analyzed": "You are stupid",
                 "sentiment": {
@@ -21,11 +23,29 @@
         ]
     },
     "3": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.998
+        },
+        "text_analyze": "Schiesse! du bist dumm"
+    },
+    "4": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.977
+        },
+        "text_analyze": "No eres tan inocente "
+    },
+    "5": {
         "abusive-words-found": [
             {
-                "word": "dumb",
+                "word_in_text": "idiot",
+                "matched_with": "stupid",
+                "similarity": 0.623,
                 "severity": "high",
-                "text_analyzed": "Schiesse! du bist dumb",
+                "text_analyzed": "You are idiot",
                 "sentiment": {
                     "sentiment": "NEGATIVE",
                     "confidence": 1.0

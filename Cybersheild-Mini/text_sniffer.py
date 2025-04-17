@@ -1,7 +1,10 @@
 import json
+import torch
 from transformers import pipeline
+from sentence_transformers import SentenceTransformer,util
 
 sentiment_analyzer=pipeline("sentiment-analysis")
+embedding_model=SentenceTransformer('all-MiniLM-L6-v2')
 
 # Step 1: Load abusive words from file
 def load_abusive_words(file_path):
@@ -16,20 +19,40 @@ def analyze_sentiment(text):
             "confidence":round(result['score'],3)}
 
 # Step 3: Check text for abusive words
-def detect_abuse(text, abusive_words):
+def detect_abuse(text, abusive_words,similarity_threshold=0.6):
     detected = []
     words_in_text = text.lower().split()  # Split input text into words
     sentiment_report=analyze_sentiment(text)
-    for word in abusive_words:
-        if word in words_in_text:
-            detected.append({
-                "word": word,
-                "severity": "high", 
-                "text_analyzed": text,
-                "sentiment":sentiment_report
-                  # Move the text analyze into the dictionary itself. #implement sentiment analysis librays, # share the offensive model repo
+    # for word in abusive_words:
+    #     if word in words_in_text:
+    #         detected.append({
+    #             "word": word,
+    #             "severity": "high", 
+    #             "text_analyzed": text,
+    #             "sentiment":sentiment_report
+                  
    
-            })
+    #         })
+    text_embeddings=embedding_model.encode(words_in_text,convert_to_tensor=True)
+    abusive_embeddings=embedding_model.encode(abusive_words,convert_to_tensor=True)
+
+    for i, word_embeeding in enumerate(text_embeddings):
+         cosine_scores=util.cos_sim(word_embeeding,abusive_embeddings)[0]
+         max_score=torch.max(cosine_scores).item()
+         if max_score>=similarity_threshold:
+              matched_index=torch.argmax(cosine_scores).item()
+              matched_word=abusive_words[matched_index]
+              detected.append({
+                   "word_in_text": words_in_text[i],
+                "matched_with": matched_word,
+                "similarity": round(max_score, 3),
+                "severity": "high",
+                "text_analyzed": text,
+                "sentiment": sentiment_report
+              })
+              
+         
+         
     #sentiment_report=analyze_sentiment(text)
     if detected:
         return{
@@ -42,29 +65,7 @@ def detect_abuse(text, abusive_words):
             'sentiment':sentiment_report, #this one 
             "text_analyze":text
         }
-    # return {
-    #     "abusive_words_found": detected,
-    #     #"text_analyzed": text,
-        
-   #sentiment_report=analyze_sentiment(text)     
-    
-
-# Step 4: Main function (runs when script is executed)
-# if __name__ == "__main__":
-#     # Load abusive words
-#     abusive_words = load_abusive_words("abusive_words.txt")
-    
-#     # Ask user for input
-#     user_text = input("Enter text to analyze: ")
-    
-#     # Detect abusive words
-#     report = detect_abuse(user_text, abusive_words)
-    
-#     # Save report to JSON
-#     with open("abuse_report.json", "w") as f:
-#         json.dump(report, f, indent=4)  # `indent=4` makes JSON readable
-    
-#     print("Analysis complete! Report saved to 'abuse_report.json'.")
+   
 
     
     

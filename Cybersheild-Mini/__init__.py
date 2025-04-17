@@ -21,7 +21,7 @@ if __name__ == "__main__":
     for  key in content_object:
         user_text=content_object[key]
         # Detect abusive words
-        report = detect_abuse(user_text, abusive_words)
+        report = detect_abuse(user_text, abusive_words,similarity_threshold=0.6)
          
         report_dict[key]=report
 
@@ -33,4 +33,5 @@ if __name__ == "__main__":
     
 
     print("Analysis complete! Report saved to 'abuse_report.json'.")
+
 

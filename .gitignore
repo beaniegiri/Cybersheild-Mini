@@ -6,27 +6,26 @@
 # *.pyd
 # .vscode
 
-# Ignore Python cache
+# Byte-compiled / cache files
 __pycache__/
 *.py[cod]
-*.so
 
-# Ignore Jupyter Notebook checkpoints
+# Jupyter Notebooks
+*.ipynb
 .ipynb_checkpoints/
 
-# Ignore datasets and temporary files
+# Datasets
 *.csv
 *.json
 
-# Ignore virtual environments
-.venv/
-env/
-venv/
-
-# Ignore OS and IDE files
+# Hidden system files
 .DS_Store
+Thumbs.db
+
+# VS Code config
 .vscode/
 
-# Optional: Ignore all notebook files if not tracking
-*.ipynb
+# Embedded repo
+Cybersheildcopy/
+
 

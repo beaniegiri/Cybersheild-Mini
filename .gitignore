@@ -1,10 +1,10 @@
-.venv
-venv
-__pycache__
-*.pyc
-*.pyo
-*.pyd
-.vscode
+# .venv
+# venv
+# __pycache__
+# *.pyc
+# *.pyo
+# *.pyd
+# .vscode
 
 # Ignore Python cache
 __pycache__/

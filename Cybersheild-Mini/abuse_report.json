@@ -1,11 +1,18 @@
 {
     "1": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 0.996
-        },
-        "text_analyze": "hallo"
+        "abusive-words-found": [
+            {
+                "word_in_text": "stupid.",
+                "matched_with": "stupid",
+                "similarity": 0.868,
+                "severity": "high",
+                "text_analyzed": "You are not that stupid.",
+                "sentiment": {
+                    "sentiment": "POSITIVE",
+                    "confidence": 0.992
+                }
+            }
+        ]
     },
     "2": {
         "abusive-words-found": [
@@ -31,26 +38,168 @@
         "text_analyze": "Schiesse! du bist dumm"
     },
     "4": {
+        "abusive-words-found": [
+            {
+                "word_in_text": "hate",
+                "matched_with": "hate",
+                "similarity": 1.0,
+                "severity": "high",
+                "text_analyzed": "I hate nothing!",
+                "sentiment": {
+                    "sentiment": "POSITIVE",
+                    "confidence": 0.872
+                }
+            }
+        ]
+    },
+    "5": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.786
+        },
+        "text_analyze": "algo esta mal"
+    },
+    "6": {
         "abusive-words_found": [],
         "sentiment": {
             "sentiment": "NEGATIVE",
             "confidence": 0.977
         },
-        "text_analyze": "No eres tan inocente "
+        "text_analyze": "No eres tan inocente"
     },
-    "5": {
+    "7": {
         "abusive-words-found": [
             {
-                "word_in_text": "idiot",
-                "matched_with": "stupid",
-                "similarity": 0.623,
-                "severity": "high",
-                "text_analyzed": "You are idiot",
+                "word_in_text": "fool.",
+                "matched_with": "fools",
+                "similarity": 0.759,
+                "severity": "medium",
+                "text_analyzed": "You're such a fool.",
                 "sentiment": {
                     "sentiment": "NEGATIVE",
                     "confidence": 1.0
                 }
             }
         ]
+    },
+    "8": {
+        "abusive-words-found": [
+            {
+                "word_in_text": "dumb",
+                "matched_with": "dumb",
+                "similarity": 1.0,
+                "severity": "high",
+                "text_analyzed": "That was a dumb idea.",
+                "sentiment": {
+                    "sentiment": "NEGATIVE",
+                    "confidence": 1.0
+                }
+            }
+        ]
+    },
+    "9": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.998
+        },
+        "text_analyze": "Shut your mouth."
+    },
+    "10": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 1.0
+        },
+        "text_analyze": "This is the worst thing you've ever said."
+    },
+    "11": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.972
+        },
+        "text_analyze": "Est\u00c3\u00a1s loco."
+    },
+    "12": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.672
+        },
+        "text_analyze": "Ni siquiera puedes pensar."
+    },
+    "13": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 1.0
+        },
+        "text_analyze": "You can't do anything right."
+    },
+    "14": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.999
+        },
+        "text_analyze": "Nobody likes you."
+    },
+    "15": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.999
+        },
+        "text_analyze": "How can someone be this clueless?"
+    },
+    "16": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 1.0
+        },
+        "text_analyze": "That was pathetic."
+    },
+    "17": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.995
+        },
+        "text_analyze": "Stop being so annoying."
+    },
+    "18": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.996
+        },
+        "text_analyze": "Du bist so nutzlos."
+    },
+    "19": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "POSITIVE",
+            "confidence": 0.994
+        },
+        "text_analyze": "C\u00c3\u00a1llate ya."
+    },
+    "20": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "POSITIVE",
+            "confidence": 0.974
+        },
+        "text_analyze": "You really did not messed this up."
+    },
+    "21": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.983
+        },
+        "text_analyze": "Idi0t f00l."
     }
 }

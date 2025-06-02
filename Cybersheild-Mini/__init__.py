@@ -5,9 +5,6 @@ if __name__ == "__main__":
     # Load abusive words
     abusive_words = load_abusive_words("abusive_words.txt")
     
-    # Ask user for input
-    #user_text = input("Enter text to analyze: ")
-    #file_path = input("Please enter the path to your file: ")
     file_path= "user_entry.json"
 
 # Open and read the file
@@ -19,9 +16,9 @@ if __name__ == "__main__":
 
     report_dict={}
     for  key in content_object:
-        user_text=content_object[key]
+        user_text=content_object[key]['TEXT']
         # Detect abusive words
-        report = detect_abuse(user_text, abusive_words,similarity_threshold=0.6)
+        report = detect_abuse(user_text, abusive_words, similarity_threshold=0.6)
          
         report_dict[key]=report
 

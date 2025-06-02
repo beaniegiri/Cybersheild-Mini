@@ -1,0 +1,32 @@
+.venv
+venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.vscode
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore datasets and temporary files
+*.csv
+*.json
+
+# Ignore virtual environments
+.venv/
+env/
+venv/
+
+# Ignore OS and IDE files
+.DS_Store
+.vscode/
+
+# Optional: Ignore all notebook files if not tracking
+*.ipynb
+

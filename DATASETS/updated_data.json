@@ -17,12 +17,12 @@
     "3": {
         "text": "happy bday",
         "sentiment": "positive",
-        "language": "tl"
+        "language": "en"
     },
     "4": {
         "text": "I like it",
         "sentiment": "positive",
-        "language": "no"
+        "language": "en"
     },
     "5": {
         "text": "thats great weee visitors",
@@ -87,7 +87,7 @@
     "17": {
         "text": "Cramps",
         "sentiment": "negative",
-        "language": "ca"
+        "language": "en"
     },
     "18": {
         "text": "you guys didnt say hi or answer my questions yesterday  but nice songs",
@@ -122,7 +122,7 @@
     "24": {
         "text": "you are lame  go make me breakfast",
         "sentiment": "negative",
-        "language": "hr"
+        "language": "en"
     },
     "25": {
         "text": "thats so cool",
@@ -172,7 +172,7 @@
     "34": {
         "text": "whered you go",
         "sentiment": "neutral",
-        "language": "cy"
+        "language": "en"
     },
     "35": {
         "text": "Watching Body of Liesgood film",
@@ -247,7 +247,7 @@
     "49": {
         "text": "Not happy",
         "sentiment": "negative",
-        "language": "nl"
+        "language": "en"
     },
     "50": {
         "text": "Is watching acoustic performances  In the mood for a good FRIENDS episode I miss that show",
@@ -262,7 +262,7 @@
     "52": {
         "text": "Im so very tiredand have insomnia",
         "sentiment": "negative",
-        "language": "no"
+        "language": "en"
     },
     "53": {
         "text": "Thanks Ennio",
@@ -447,7 +447,7 @@
     "89": {
         "text": "Gnight shar    Vega",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "sq"
     },
     "90": {
         "text": "The underwire in my bra is sticking out and poking me in the armpit",
@@ -462,7 +462,7 @@
     "92": {
         "text": "Yes I am",
         "sentiment": "neutral",
-        "language": "ca"
+        "language": "en"
     },
     "93": {
         "text": "I cant call Mitch  Im from sweden",
@@ -532,7 +532,7 @@
     "106": {
         "text": "yeh me",
         "sentiment": "neutral",
-        "language": "id"
+        "language": "en"
     },
     "107": {
         "text": "learning tat the scenic way  din plan to go town but somehow was herded there",
@@ -572,7 +572,7 @@
     "114": {
         "text": "bahah sadly I am not",
         "sentiment": "negative",
-        "language": "so"
+        "language": "en"
     },
     "115": {
         "text": "i always have those for my Champions League parties  Tis awesome",
@@ -652,7 +652,7 @@
     "130": {
         "text": "Welcome",
         "sentiment": "positive",
-        "language": "it"
+        "language": "en"
     },
     "131": {
         "text": "Bout to hit pmark then make one of my final meals wit the housemates",
@@ -802,7 +802,7 @@
     "160": {
         "text": "Hahaha Alright",
         "sentiment": "positive",
-        "language": "so"
+        "language": "en"
     },
     "161": {
         "text": "Arent you suppossed to support the local economy  LOL  good for you and congrats",
@@ -852,7 +852,7 @@
     "170": {
         "text": "is ONLiNE",
         "sentiment": "neutral",
-        "language": "af"
+        "language": "en"
     },
     "171": {
         "text": "bundy in  days warm weather here i come",
@@ -972,7 +972,7 @@
     "194": {
         "text": "woot",
         "sentiment": "positive",
-        "language": "af"
+        "language": "en"
     },
     "195": {
         "text": "I dont like Monday i wish it were sunday cause thats my fun day  that was my freaking jam when i was little   i miss it",
@@ -1007,7 +1007,7 @@
     "201": {
         "text": "Camping at black butte lake",
         "sentiment": "neutral",
-        "language": "tl"
+        "language": "en"
     },
     "202": {
         "text": "are you getting my messages or do you have to add me to recieve them soz Im new to this",
@@ -1222,7 +1222,7 @@
     "244": {
         "text": "MY SiSTER iN LAW JUST LEFT FOR HER PROM SHE LOOKED SOO PRETTY TEARS ALL AROUND",
         "sentiment": "positive",
-        "language": "de"
+        "language": "en"
     },
     "245": {
         "text": "follow me too",
@@ -1242,7 +1242,7 @@
     "248": {
         "text": "goodnight",
         "sentiment": "positive",
-        "language": "cy"
+        "language": "en"
     },
     "249": {
         "text": "TheMoon Hiya hun Its just not my day Dentist appointment ouchnotebook being a  Feeling sick  Hows you",
@@ -1317,7 +1317,7 @@
     "263": {
         "text": "Im siiiiiickkk  I dun feel good",
         "sentiment": "negative",
-        "language": "so"
+        "language": "en"
     },
     "264": {
         "text": "Propellerheads has been on my harddrive for a long while Just got my music repo back in shape this WE and felt nostalgic",
@@ -1377,7 +1377,7 @@
     "275": {
         "text": "hey hey",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "so"
     },
     "276": {
         "text": "thinks revising in the garden from  this morning without sunscreen isnt the best idea ive had  oucccccccch",
@@ -1387,7 +1387,7 @@
     "277": {
         "text": "Is miserable  i feel like im gona cry  sux",
         "sentiment": "negative",
-        "language": "et"
+        "language": "en"
     },
     "278": {
         "text": "i know they are deliciousmiss germany but like holland as well as we used to shoppin there at weekendslol",
@@ -1597,7 +1597,7 @@
     "319": {
         "text": "unfair  I wanna go too",
         "sentiment": "negative",
-        "language": "so"
+        "language": "cy"
     },
     "320": {
         "text": "Download movie  A Good Day to Be Black  Sexy  cool",
@@ -1817,7 +1817,7 @@
     "363": {
         "text": "me too",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "af"
     },
     "364": {
         "text": "Hi ho  hi ho its off to work we go",
@@ -1877,7 +1877,7 @@
     "375": {
         "text": "So tired",
         "sentiment": "negative",
-        "language": "da"
+        "language": "en"
     },
     "376": {
         "text": "had a lovely breakfast with mumyummy pancakes",
@@ -2007,7 +2007,7 @@
     "401": {
         "text": "dear oh dear",
         "sentiment": "negative",
-        "language": "en"
+        "language": "ca"
     },
     "402": {
         "text": "my monday running so fast",
@@ -2247,7 +2247,7 @@
     "449": {
         "text": "Hello again  Howd ur saturday go",
         "sentiment": "neutral",
-        "language": "so"
+        "language": "tl"
     },
     "450": {
         "text": "why arent you showing up as a  in my screen",
@@ -2337,7 +2337,7 @@
     "467": {
         "text": "lmao im only joking mate",
         "sentiment": "neutral",
-        "language": "tl"
+        "language": "fi"
     },
     "468": {
         "text": "FOLLOW ME BABY U SAID N DA CHAT U WILL  LUV YA GOODNITE",
@@ -2617,7 +2617,7 @@
     "523": {
         "text": "Hey Esmee How U doing",
         "sentiment": "neutral",
-        "language": "nl"
+        "language": "en"
     },
     "524": {
         "text": "MUAHAHAHHAHAHA   well maybe they think Im crazy or something I havent scared  yet though",
@@ -2747,7 +2747,7 @@
     "549": {
         "text": "ZsNagy presents",
         "sentiment": "neutral",
-        "language": "hu"
+        "language": "en"
     },
     "550": {
         "text": "Layne  hmm whats ur fav movie tv shows",
@@ -3032,7 +3032,7 @@
     "606": {
         "text": "bad mood and i dont feel good too bad no one cares",
         "sentiment": "negative",
-        "language": "so"
+        "language": "en"
     },
     "607": {
         "text": "I love you so much  Just got into my hiding spot gonna go check out datalounge",
@@ -3142,7 +3142,7 @@
     "628": {
         "text": "oh you are too kind",
         "sentiment": "positive",
-        "language": "so"
+        "language": "en"
     },
     "629": {
         "text": "yeah so quick And Im using the mm addis I bought on Sat and it makes it even smoother",
@@ -3157,7 +3157,7 @@
     "631": {
         "text": "Pleeaaasee come out sun",
         "sentiment": "neutral",
-        "language": "nl"
+        "language": "et"
     },
     "632": {
         "text": "ummmlast night when I DMd you you said it was a good question",
@@ -3382,7 +3382,7 @@
     "676": {
         "text": "Lets go",
         "sentiment": "neutral",
-        "language": "fr"
+        "language": "nl"
     },
     "677": {
         "text": "feels really sick",
@@ -3447,7 +3447,7 @@
     "689": {
         "text": "All done No more internship",
         "sentiment": "neutral",
-        "language": "it"
+        "language": "en"
     },
     "690": {
         "text": "RIP to officer Edwards May GOD continue to bless his family Whats up wit cops killing cops Seen the same thing happen on The WIRE",
@@ -3547,7 +3547,7 @@
     "709": {
         "text": "OH I am just so tired",
         "sentiment": "negative",
-        "language": "hr"
+        "language": "sv"
     },
     "710": {
         "text": "Well my dog still isnt at the shelter I hope someone good has him",
@@ -3572,7 +3572,7 @@
     "714": {
         "text": "Always a good idea",
         "sentiment": "positive",
-        "language": "cy"
+        "language": "so"
     },
     "715": {
         "text": "I remember those days I wasnt a big fan of Wesley but I really felt for you as a youngster dealing with all that But you WON",
@@ -4427,7 +4427,7 @@
     "885": {
         "text": "keeping it chilled",
         "sentiment": "positive",
-        "language": "en"
+        "language": "nl"
     },
     "886": {
         "text": "what a beautiful day not to got to my first class",
@@ -4562,7 +4562,7 @@
     "912": {
         "text": "me too",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "af"
     },
     "913": {
         "text": "Im sad to have lost another person close to me to cancer",
@@ -4617,7 +4617,7 @@
     "923": {
         "text": "LOL yeah ima mama  thanks happy mamas day and lakers day i love it",
         "sentiment": "positive",
-        "language": "en"
+        "language": "tl"
     },
     "924": {
         "text": "DONEITS SUMMER",
@@ -4812,7 +4812,7 @@
     "962": {
         "text": "Jesus heals",
         "sentiment": "positive",
-        "language": "en"
+        "language": "et"
     },
     "963": {
         "text": "Its surprising how much Billy Idol turns up in tweets I monitor constantly  not that Im obsessed or anything",
@@ -5247,7 +5247,7 @@
     "1049": {
         "text": "i tried and failed",
         "sentiment": "negative",
-        "language": "en"
+        "language": "cy"
     },
     "1050": {
         "text": "just finished mine some parts were remarkably difficult  cramming kanji now",
@@ -5377,7 +5377,7 @@
     "1075": {
         "text": "ohh snapp have fun",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "sv"
     },
     "1076": {
         "text": "Sitting waiting for an exam to start",
@@ -5502,7 +5502,7 @@
     "1100": {
         "text": "just had a gym sesh",
         "sentiment": "neutral",
-        "language": "et"
+        "language": "cy"
     },
     "1101": {
         "text": "Trying to get to sleep but mum is blaring Les Mis really loudly in the sitting room",
@@ -5552,7 +5552,7 @@
     "1110": {
         "text": "Truetrue  But hes not xD",
         "sentiment": "positive",
-        "language": "fr"
+        "language": "en"
     },
     "1111": {
         "text": "Sad I missed  going away party due to too much work but I really am gonna miss that kid",
@@ -5642,7 +5642,7 @@
     "1128": {
         "text": "I missed mine too Not fun",
         "sentiment": "negative",
-        "language": "et"
+        "language": "en"
     },
     "1129": {
         "text": "via  Found  Heads Up  Probably my only find of the day",
@@ -5692,7 +5692,7 @@
     "1138": {
         "text": "Thanks",
         "sentiment": "neutral",
-        "language": "fi"
+        "language": "en"
     },
     "1139": {
         "text": "cant be arsed to get out of bed  hello sunshine",
@@ -5787,7 +5787,7 @@
     "1157": {
         "text": "kk  Y closing get out",
         "sentiment": "negative",
-        "language": "no"
+        "language": "en"
     },
     "1158": {
         "text": "Hes too old school for burnouts Just a lap around the track like they used to",
@@ -5887,7 +5887,7 @@
     "1177": {
         "text": "happy star wars day",
         "sentiment": "positive",
-        "language": "so"
+        "language": "en"
     },
     "1178": {
         "text": "Just got notified my podcast was accepted into iTunes  Of course I then realized it was miss formated  Fixed now",
@@ -6127,7 +6127,7 @@
     "1225": {
         "text": "jimski in my book yes",
         "sentiment": "neutral",
-        "language": "tr"
+        "language": "sl"
     },
     "1226": {
         "text": "ilooked in my phone book and ur name was the first to show and i was like i got titi number but it was just ur email",
@@ -6207,7 +6207,7 @@
     "1241": {
         "text": "ahh ok Enjoy Ill miss it",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "et"
     },
     "1242": {
         "text": "So tonights TV viewing BGT or HIGNFY and Reggie Perrin Wont be tweeting however as  MiniC has hidden iPod",
@@ -6272,7 +6272,7 @@
     "1254": {
         "text": "Still no Internet today",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "it"
     },
     "1255": {
         "text": "Tbh having no credit in your phone sux i cant even text people to see whats happening like its totally grrrsville",
@@ -6517,7 +6517,7 @@
     "1303": {
         "text": "Inorite humid as well",
         "sentiment": "neutral",
-        "language": "af"
+        "language": "en"
     },
     "1304": {
         "text": "Heading back home with a win",
@@ -6697,7 +6697,7 @@
     "1339": {
         "text": "Feeling very tierd too much college work",
         "sentiment": "negative",
-        "language": "nl"
+        "language": "en"
     },
     "1340": {
         "text": "mmmreconsituted meat products and weekold veggiesgotta love that rehydrated warm milk for breakfast",
@@ -6742,7 +6742,7 @@
     "1348": {
         "text": "i dont like  since ver  its like vista",
         "sentiment": "negative",
-        "language": "no"
+        "language": "af"
     },
     "1349": {
         "text": "Just woke up Making breakfast",
@@ -6792,7 +6792,7 @@
     "1358": {
         "text": "cookies are good",
         "sentiment": "positive",
-        "language": "en"
+        "language": "af"
     },
     "1359": {
         "text": "He loved it so Happy Birthday   He said you sounded like a mixture of John Lennon Chrissie Hynde and Janis Joplin",
@@ -7072,7 +7072,7 @@
     "1414": {
         "text": "so i guess we r sleepin over",
         "sentiment": "neutral",
-        "language": "no"
+        "language": "en"
     },
     "1415": {
         "text": "He put a  mohawk in my son headhe just killed my vibe as always",
@@ -7302,7 +7302,7 @@
     "1460": {
         "text": "HAPPY MOTHERS DAY  ME",
         "sentiment": "positive",
-        "language": "de"
+        "language": "so"
     },
     "1461": {
         "text": "Why is looking for girls names easier than looking for boys",
@@ -7897,7 +7897,7 @@
     "1579": {
         "text": "got all As",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "ca"
     },
     "1580": {
         "text": "i know i told him i didnt want him to stay home with me but i lied i really did want him to stay home with me",
@@ -7972,7 +7972,7 @@
     "1594": {
         "text": "misses Nanny",
         "sentiment": "negative",
-        "language": "fi"
+        "language": "et"
     },
     "1595": {
         "text": "Allison Catch you later Terry",
@@ -8182,7 +8182,7 @@
     "1636": {
         "text": "Not made it to work  couldnt get up feelin blurgh",
         "sentiment": "negative",
-        "language": "en"
+        "language": "nl"
     },
     "1637": {
         "text": "I have it  Hehehehe u want the torrent",
@@ -8227,7 +8227,7 @@
     "1645": {
         "text": "HEY BUCK  love u loads LOVE WHAT THE BUCK",
         "sentiment": "positive",
-        "language": "en"
+        "language": "hr"
     },
     "1646": {
         "text": "Wow my bed is SO comfy  my nap has been much too short Getting up for work  do not want",
@@ -8597,7 +8597,7 @@
     "1719": {
         "text": "im a bum today",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "hr"
     },
     "1720": {
         "text": "went to the cd store to search for the cd But",
@@ -9002,7 +9002,7 @@
     "1800": {
         "text": "hi  godd day eweryone im in a reel good mood to day",
         "sentiment": "positive",
-        "language": "so"
+        "language": "cy"
     },
     "1801": {
         "text": "Whoo BGT I really must multitask and do my Art work at the same time though back at College on Monday",
@@ -9092,7 +9092,7 @@
     "1818": {
         "text": "Im sad i cant go it makes me sad",
         "sentiment": "negative",
-        "language": "ca"
+        "language": "tl"
     },
     "1819": {
         "text": "same Was going to try warm milk but Im lactose intolerant  haha",
@@ -9132,7 +9132,7 @@
     "1826": {
         "text": "feeling so great",
         "sentiment": "positive",
-        "language": "no"
+        "language": "en"
     },
     "1827": {
         "text": "AHHHHHHHHI cant get miley to notice me",
@@ -9272,7 +9272,7 @@
     "1854": {
         "text": "lied last weekend when she said she wouldnt get upset just an FYI",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "nl"
     },
     "1855": {
         "text": "hahaha Guess you will have to reinforce your skates haha Remember who u r my friend our semiGod with a gluten intolence",
@@ -9382,7 +9382,7 @@
     "1876": {
         "text": "All my spare time seems twill be spent doing homework this weekend",
         "sentiment": "neutral",
-        "language": "af"
+        "language": "en"
     },
     "1877": {
         "text": "LAZZZZZZZZZZZZZZZY MONDAY  Bank Holiday  Nicole why havent u direct msged me yet",
@@ -9407,7 +9407,7 @@
     "1881": {
         "text": "lol catch me if u can",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "cy"
     },
     "1882": {
         "text": "stupid wireless",
@@ -9617,7 +9617,7 @@
     "1923": {
         "text": "brah u not happy",
         "sentiment": "negative",
-        "language": "en"
+        "language": "cs"
     },
     "1924": {
         "text": "hah ima knock on wood but my PC has never crashed yetnor my laptop  but then im careful with stuff so maybe thats y",
@@ -10147,7 +10147,7 @@
     "2029": {
         "text": "queen like it",
         "sentiment": "positive",
-        "language": "sq"
+        "language": "af"
     },
     "2030": {
         "text": "I think YOUR blog shouldve been on the list",
@@ -10357,7 +10357,7 @@
     "2071": {
         "text": "I miss you",
         "sentiment": "negative",
-        "language": "fi"
+        "language": "en"
     },
     "2072": {
         "text": "thats a good sentence",
@@ -10422,7 +10422,7 @@
     "2084": {
         "text": "Sleeptake twothis better work",
         "sentiment": "positive",
-        "language": "af"
+        "language": "en"
     },
     "2085": {
         "text": "have to wear my glasses today cos my right eye is swollen and i dont know why",
@@ -11392,7 +11392,7 @@
     "2278": {
         "text": "i have  friends going  so jealous",
         "sentiment": "negative",
-        "language": "no"
+        "language": "da"
     },
     "2279": {
         "text": "sad that will have to leave my beautiful apartment",
@@ -11642,7 +11642,7 @@
     "2328": {
         "text": "ipod died today",
         "sentiment": "negative",
-        "language": "af"
+        "language": "en"
     },
     "2329": {
         "text": "is new van a nice one",
@@ -11732,7 +11732,7 @@
     "2346": {
         "text": "ahaha thats okay and thanks",
         "sentiment": "positive",
-        "language": "so"
+        "language": "en"
     },
     "2347": {
         "text": "and  why are u two fighting",
@@ -12132,7 +12132,7 @@
     "2426": {
         "text": "dubbs curse you igloo dwellers",
         "sentiment": "negative",
-        "language": "so"
+        "language": "fr"
     },
     "2427": {
         "text": "Hahahahahahahaha hope so I hope youll like it",
@@ -12422,7 +12422,7 @@
     "2484": {
         "text": "Catt i TOTALLY love your default picture You seem like such a fun mom",
         "sentiment": "positive",
-        "language": "fr"
+        "language": "en"
     },
     "2485": {
         "text": "Friday Night Magic last night I lost so bad  I suck at draft",
@@ -12562,7 +12562,7 @@
     "2512": {
         "text": "I am freezing",
         "sentiment": "neutral",
-        "language": "de"
+        "language": "en"
     },
     "2513": {
         "text": "Yeaa I Know She is Smartier Then That plus She Knows The real Thing Is Better Lol",
@@ -12862,7 +12862,7 @@
     "2572": {
         "text": "needs to get over this fever grrrrr",
         "sentiment": "negative",
-        "language": "nl"
+        "language": "en"
     },
     "2573": {
         "text": "baha im gonna have to find some  i dont think we took any D but im gonna find some",
@@ -12962,7 +12962,7 @@
     "2592": {
         "text": "most definitely",
         "sentiment": "positive",
-        "language": "en"
+        "language": "ro"
     },
     "2593": {
         "text": "I didnt get a callback for the play I cried  oh well I guess its back to being a techie",
@@ -12997,7 +12997,7 @@
     "2599": {
         "text": "Outlook not so good",
         "sentiment": "negative",
-        "language": "af"
+        "language": "sl"
     },
     "2600": {
         "text": "Just Saw Confessions Of A ShopoholicTotally fell in love with Hugh Dancys accent  Need  for tomorrow new top i want",
@@ -13037,7 +13037,7 @@
     "2607": {
         "text": "ImChris and i cant get to mine  keep getting an error",
         "sentiment": "negative",
-        "language": "en"
+        "language": "nl"
     },
     "2608": {
         "text": "Glad to hear youll have your st tournament soon As KSN says We need more practice",
@@ -13092,7 +13092,7 @@
     "2618": {
         "text": "I miss u like cotton candy",
         "sentiment": "negative",
-        "language": "it"
+        "language": "en"
     },
     "2619": {
         "text": "stayed home from school today   doctors sooooon",
@@ -13112,7 +13112,7 @@
     "2622": {
         "text": "OmG U NasTY",
         "sentiment": "negative",
-        "language": "de"
+        "language": "hr"
     },
     "2623": {
         "text": "PS Culled a handful esp followers spam ones with NSFW links that I did NOT click on You made the cut though",
@@ -13307,7 +13307,7 @@
     "2661": {
         "text": "Bummer  I hope it doesnt continue too long",
         "sentiment": "negative",
-        "language": "en"
+        "language": "fr"
     },
     "2662": {
         "text": "graham yerrrr sameee haha its the way he plays edward i thinkk mmmm",
@@ -13832,7 +13832,7 @@
     "2766": {
         "text": "I love you",
         "sentiment": "positive",
-        "language": "sk"
+        "language": "es"
     },
     "2767": {
         "text": "a steak burrito bowl right I wish I wasnt too lazy to go downtown",
@@ -13947,7 +13947,7 @@
     "2789": {
         "text": "woot you go girl",
         "sentiment": "neutral",
-        "language": "af"
+        "language": "cy"
     },
     "2790": {
         "text": "From twitterberry moved to ubertwitter  suffered from BB cache errors",
@@ -13977,7 +13977,7 @@
     "2795": {
         "text": "well miss you Im sad I didnt get to meet you",
         "sentiment": "negative",
-        "language": "af"
+        "language": "nl"
     },
     "2796": {
         "text": "Completely EXCELLENT Dave Matthews concert Jason Mraz opened  I heard stay or leave  crush for the first time live",
@@ -14002,7 +14002,7 @@
     "2800": {
         "text": "tiiiired but i cant sleep",
         "sentiment": "negative",
-        "language": "ro"
+        "language": "en"
     },
     "2801": {
         "text": "you were greeeeeeaaaaatttttttt babe It was amazing",
@@ -14097,7 +14097,7 @@
     "2819": {
         "text": "like wat do i do wat do i doHA i got it ill go  mushygushy so peace out twitter dudes i got a gushy gram  make",
         "sentiment": "neutral",
-        "language": "af"
+        "language": "en"
     },
     "2820": {
         "text": "I need a hug cuz these garbage truck men keep driving next to me whistling and Im working too hard  graduate",
@@ -14212,7 +14212,7 @@
     "2842": {
         "text": "now im done good nite",
         "sentiment": "positive",
-        "language": "pl"
+        "language": "hr"
     },
     "2843": {
         "text": "i have no one to watch it with ma peeps  are actually focused on their finals already",
@@ -14237,7 +14237,7 @@
     "2847": {
         "text": "Talking to Sarah and Lisa",
         "sentiment": "neutral",
-        "language": "id"
+        "language": "tl"
     },
     "2848": {
         "text": "tweeterizing from a mobile",
@@ -14767,7 +14767,7 @@
     "2953": {
         "text": "i L u so much  See u at school todaay",
         "sentiment": "positive",
-        "language": "en"
+        "language": "so"
     },
     "2954": {
         "text": "Britains got Torture  Edelcries",
@@ -15157,7 +15157,7 @@
     "3031": {
         "text": "morning you",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "tl"
     },
     "3032": {
         "text": "new phone  zero contacts  poo send me a message with your name so i can save your numbers thanks",
@@ -15352,7 +15352,7 @@
     "3070": {
         "text": "SHOUT OUT TO NIKKIPLEASSSEEE   Soulja Boy Tell Em LIVE live",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "et"
     },
     "3071": {
         "text": "I love Googles Mothers day theme",
@@ -15837,7 +15837,7 @@
     "3167": {
         "text": "how come i want pizza",
         "sentiment": "neutral",
-        "language": "pl"
+        "language": "it"
     },
     "3168": {
         "text": "Geez Im hating bein at work till  on a day like this I feel like its a wasted lovley day",
@@ -15887,7 +15887,7 @@
     "3177": {
         "text": "Happy Anoop Day to you too Monica",
         "sentiment": "positive",
-        "language": "en"
+        "language": "tl"
     },
     "3178": {
         "text": "Just tried an energy drink to report back for you guys and im sweating and have the worst cramps I want to lie down",
@@ -15932,7 +15932,7 @@
     "3186": {
         "text": "me too",
         "sentiment": "negative",
-        "language": "en"
+        "language": "af"
     },
     "3187": {
         "text": "Tuned to listen but had a  meeting Now know that my high schoolcollege French doesnt cut it anymore",
@@ -16137,7 +16137,7 @@
     "3227": {
         "text": "im donehaha HOUSE MD marathon ulet",
         "sentiment": "positive",
-        "language": "id"
+        "language": "en"
     },
     "3228": {
         "text": "omginorite Id be all fancy and tophatted all the time its really too bad I cant grow a handlebar moustache",
@@ -16557,7 +16557,7 @@
     "3311": {
         "text": "Kicking like crazy",
         "sentiment": "neutral",
-        "language": "hr"
+        "language": "pl"
     },
     "3312": {
         "text": "Poor Thing",
@@ -16767,7 +16767,7 @@
     "3353": {
         "text": "About  again todayy yayy",
         "sentiment": "neutral",
-        "language": "id"
+        "language": "so"
     },
     "3354": {
         "text": "There is a MacBook Pro sitting close by and my poor MacBook is ashamed with its plastic face and sides",
@@ -16802,7 +16802,7 @@
     "3360": {
         "text": "I forgot Happy Moms day",
         "sentiment": "positive",
-        "language": "no"
+        "language": "en"
     },
     "3361": {
         "text": "In a really Good mood for absolutely no reason  tee her",
@@ -17267,7 +17267,7 @@
     "3453": {
         "text": "LOL Glad you like it",
         "sentiment": "positive",
-        "language": "et"
+        "language": "af"
     },
     "3454": {
         "text": "I didnt save those links I dont need distractions I just need motivation",
@@ -17292,7 +17292,7 @@
     "3458": {
         "text": "I said hi to u",
         "sentiment": "neutral",
-        "language": "et"
+        "language": "it"
     },
     "3459": {
         "text": "OMG  Madness Just Came On The Radio",
@@ -17337,7 +17337,7 @@
     "3467": {
         "text": "Oh It was marathon  mahasha",
         "sentiment": "neutral",
-        "language": "so"
+        "language": "en"
     },
     "3468": {
         "text": "yes sir i sure did",
@@ -17427,7 +17427,7 @@
     "3485": {
         "text": "Thanks for adding me",
         "sentiment": "positive",
-        "language": "en"
+        "language": "da"
     },
     "3486": {
         "text": "cant wait to watch the next season of heroes",
@@ -17552,7 +17552,7 @@
     "3510": {
         "text": "In my moms hair salon dying my hair",
         "sentiment": "neutral",
-        "language": "en"
+        "language": "cy"
     },
     "3511": {
         "text": "Good morning to all the mommies happy mothers day  Now I am off the pull the cats tail  I know she likes it",

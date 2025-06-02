@@ -1,5 +1,6 @@
 import json
 import torch
+import re
 from transformers import pipeline
 from sentence_transformers import SentenceTransformer,util
 
@@ -10,6 +11,8 @@ embedding_model=SentenceTransformer('all-MiniLM-L6-v2')
 def load_abusive_words(file_path):
     with open(file_path, 'r') as file:
         return [word.strip().lower() for word in file.readlines()]
+    # patterns=[re.compile(rf'\b{re.escape(word)}\b', re.IGNORECASE) for word in words]
+    # return words, patterns
     
 #Step2: Analyze sentiment of the input text
 def analyze_sentiment(text):
@@ -23,16 +26,6 @@ def detect_abuse(text, abusive_words,similarity_threshold=0.6):
     detected = []
     words_in_text = text.lower().split()  # Split input text into words
     sentiment_report=analyze_sentiment(text)
-    # for word in abusive_words:
-    #     if word in words_in_text:
-    #         detected.append({
-    #             "word": word,
-    #             "severity": "high", 
-    #             "text_analyzed": text,
-    #             "sentiment":sentiment_report
-                  
-   
-    #         })
     text_embeddings=embedding_model.encode(words_in_text,convert_to_tensor=True)
     abusive_embeddings=embedding_model.encode(abusive_words,convert_to_tensor=True)
 
@@ -46,7 +39,7 @@ def detect_abuse(text, abusive_words,similarity_threshold=0.6):
                    "word_in_text": words_in_text[i],
                 "matched_with": matched_word,
                 "similarity": round(max_score, 3),
-                "severity": "high",
+                "severity": "high" if max_score > 0.8 else "medium",
                 "text_analyzed": text,
                 "sentiment": sentiment_report
               })

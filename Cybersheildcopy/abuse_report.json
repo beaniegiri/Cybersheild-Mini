@@ -1,0 +1,617 @@
+{
+    "1": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "POSITIVE",
+                "confidence": 0.992
+            },
+            "vader": {
+                "sentiment": "positive",
+                "compound_score": 0.417,
+                "positive": 0.41,
+                "negative": 0.0,
+                "neutral": 0.59
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.792
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.647
+            },
+            "textblob": {
+                "polarity": -0.8,
+                "subjectivity": 1.0,
+                "sentiment": "negative"
+            }
+        },
+        "text_analyze": "You are not that stupid."
+    },
+    "2": {
+        "abusive-words-found": [
+            {
+                "word": "stupid",
+                "severity": "high"
+            }
+        ],
+        "text_analyzed": "You are stupid",
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 1.0
+            },
+            "vader": {
+                "sentiment": "negative",
+                "compound_score": -0.527,
+                "positive": 0.0,
+                "negative": 0.63,
+                "neutral": 0.37
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.971
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.628
+            },
+            "textblob": {
+                "polarity": -0.8,
+                "subjectivity": 1.0,
+                "sentiment": "negative"
+            }
+        }
+    },
+    "3": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 0.998
+            },
+            "vader": {
+                "sentiment": "neutral",
+                "compound_score": 0.0,
+                "positive": 0.0,
+                "negative": 0.0,
+                "neutral": 1.0
+            },
+            "roberta": {
+                "sentiment": "neutral",
+                "confidence": 0.736
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.628
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "Schiesse! du bist dumm"
+    },
+    "4": {
+        "abusive-words-found": [
+            {
+                "word": "hate",
+                "severity": "high"
+            }
+        ],
+        "text_analyzed": "I hate nothing!",
+        "sentiment": {
+            "bert": {
+                "sentiment": "POSITIVE",
+                "confidence": 0.872
+            },
+            "vader": {
+                "sentiment": "negative",
+                "compound_score": -0.611,
+                "positive": 0.0,
+                "negative": 0.666,
+                "neutral": 0.334
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.934
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.725
+            },
+            "textblob": {
+                "polarity": -1.0,
+                "subjectivity": 0.9,
+                "sentiment": "negative"
+            }
+        }
+    },
+    "5": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 0.786
+            },
+            "vader": {
+                "sentiment": "neutral",
+                "compound_score": 0.0,
+                "positive": 0.0,
+                "negative": 0.0,
+                "neutral": 1.0
+            },
+            "roberta": {
+                "sentiment": "neutral",
+                "confidence": 0.618
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.683
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "algo esta mal"
+    },
+    "6": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 0.977
+            },
+            "vader": {
+                "sentiment": "negative",
+                "compound_score": -0.296,
+                "positive": 0.0,
+                "negative": 0.423,
+                "neutral": 0.577
+            },
+            "roberta": {
+                "sentiment": "neutral",
+                "confidence": 0.665
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.754
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "No eres tan inocente"
+    },
+    "7": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 1.0
+            },
+            "vader": {
+                "sentiment": "negative",
+                "compound_score": -0.44,
+                "positive": 0.0,
+                "negative": 0.492,
+                "neutral": 0.508
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.969
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.671
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.5,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "You're such a fool."
+    },
+    "8": {
+        "abusive-words-found": [
+            {
+                "word": "dumb",
+                "severity": "high"
+            }
+        ],
+        "text_analyzed": "That was a dumb idea.",
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 1.0
+            },
+            "vader": {
+                "sentiment": "negative",
+                "compound_score": -0.511,
+                "positive": 0.0,
+                "negative": 0.452,
+                "neutral": 0.548
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.879
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.729
+            },
+            "textblob": {
+                "polarity": -0.375,
+                "subjectivity": 0.5,
+                "sentiment": "negative"
+            }
+        }
+    },
+    "9": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 0.998
+            },
+            "vader": {
+                "sentiment": "neutral",
+                "compound_score": 0.0,
+                "positive": 0.0,
+                "negative": 0.0,
+                "neutral": 1.0
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.757
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.751
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "Shut your mouth."
+    },
+    "10": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 1.0
+            },
+            "vader": {
+                "sentiment": "negative",
+                "compound_score": -0.625,
+                "positive": 0.0,
+                "negative": 0.369,
+                "neutral": 0.631
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.978
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.682
+            },
+            "textblob": {
+                "polarity": -1.0,
+                "subjectivity": 1.0,
+                "sentiment": "negative"
+            }
+        },
+        "text_analyze": "This is the worst thing you've ever said."
+    },
+    "11": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 0.972
+            },
+            "vader": {
+                "sentiment": "neutral",
+                "compound_score": 0.0,
+                "positive": 0.0,
+                "negative": 0.0,
+                "neutral": 1.0
+            },
+            "roberta": {
+                "sentiment": "neutral",
+                "confidence": 0.748
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.68
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "Est\u00c3\u00a1s loco."
+    },
+    "12": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 0.672
+            },
+            "vader": {
+                "sentiment": "neutral",
+                "compound_score": 0.0,
+                "positive": 0.0,
+                "negative": 0.0,
+                "neutral": 1.0
+            },
+            "roberta": {
+                "sentiment": "neutral",
+                "confidence": 0.764
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.775
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "Ni siquiera puedes pensar."
+    },
+    "13": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 1.0
+            },
+            "vader": {
+                "sentiment": "neutral",
+                "compound_score": 0.0,
+                "positive": 0.0,
+                "negative": 0.0,
+                "neutral": 1.0
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.836
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.747
+            },
+            "textblob": {
+                "polarity": 0.286,
+                "subjectivity": 0.536,
+                "sentiment": "positive"
+            }
+        },
+        "text_analyze": "You can't do anything right."
+    },
+    "14": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 0.999
+            },
+            "vader": {
+                "sentiment": "positive",
+                "compound_score": 0.421,
+                "positive": 0.583,
+                "negative": 0.0,
+                "neutral": 0.417
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.917
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.758
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "Nobody likes you."
+    },
+    "15": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 0.999
+            },
+            "vader": {
+                "sentiment": "negative",
+                "compound_score": -0.436,
+                "positive": 0.0,
+                "negative": 0.365,
+                "neutral": 0.635
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.925
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.682
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "How can someone be this clueless?"
+    },
+    "16": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 1.0
+            },
+            "vader": {
+                "sentiment": "negative",
+                "compound_score": -0.572,
+                "positive": 0.0,
+                "negative": 0.649,
+                "neutral": 0.351
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.942
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.628
+            },
+            "textblob": {
+                "polarity": -1.0,
+                "subjectivity": 1.0,
+                "sentiment": "negative"
+            }
+        },
+        "text_analyze": "That was pathetic."
+    },
+    "17": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 0.995
+            },
+            "vader": {
+                "sentiment": "negative",
+                "compound_score": -0.636,
+                "positive": 0.0,
+                "negative": 0.722,
+                "neutral": 0.278
+            },
+            "roberta": {
+                "sentiment": "negative",
+                "confidence": 0.965
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.688
+            },
+            "textblob": {
+                "polarity": -0.8,
+                "subjectivity": 0.9,
+                "sentiment": "negative"
+            }
+        },
+        "text_analyze": "Stop being so annoying."
+    },
+    "18": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "NEGATIVE",
+                "confidence": 0.996
+            },
+            "vader": {
+                "sentiment": "neutral",
+                "compound_score": 0.0,
+                "positive": 0.0,
+                "negative": 0.0,
+                "neutral": 1.0
+            },
+            "roberta": {
+                "sentiment": "neutral",
+                "confidence": 0.542
+            },
+            "hatebert": {
+                "label": "offensive",
+                "confidence": 0.505
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "Du bist so nutzlos."
+    },
+    "19": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "POSITIVE",
+                "confidence": 0.994
+            },
+            "vader": {
+                "sentiment": "neutral",
+                "compound_score": 0.0,
+                "positive": 0.0,
+                "negative": 0.0,
+                "neutral": 1.0
+            },
+            "roberta": {
+                "sentiment": "neutral",
+                "confidence": 0.706
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.641
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": "C\u00c3\u00a1llate ya."
+    },
+    "20": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "POSITIVE",
+                "confidence": 0.974
+            },
+            "vader": {
+                "sentiment": "positive",
+                "compound_score": 0.318,
+                "positive": 0.277,
+                "negative": 0.0,
+                "neutral": 0.723
+            },
+            "roberta": {
+                "sentiment": "neutral",
+                "confidence": 0.498
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.744
+            },
+            "textblob": {
+                "polarity": 0.2,
+                "subjectivity": 0.2,
+                "sentiment": "positive"
+            }
+        },
+        "text_analyze": "You really did not messed this up."
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "1": {
+        "Text": "You are not that stupid.",
+        "Sentence": ["You", "are", "not", "that", "stupid"],
+        "Sentiment": ["Neutral", "Neutral", "Negative", "Neutral", "Negative"],
+        "OverallSentiment": "Positive"
+    },
+    "2": {
+        "Text": "You are stupid",
+        "Sentence": ["You", "are", "stupid"],
+        "Sentiment": ["Neutral", "Neutral", "Negative"],
+        "OverallSentiment": "Negative"
+    },
+    "3": {
+        "Text": "Schiesse! du bist dumm",
+        "Sentence": ["Schiesse", "du", "bist", "dumm"],
+        "Sentiment": ["Negative", "Neutral", "Neutral", "Negative"],
+        "OverallSentiment": "Negative"
+    },
+    "4": {
+        "Text": "I hate nothing!",
+        "Sentence": ["I", "hate", "nothing"],
+        "Sentiment": ["Neutral", "Negative", "Neutral"],
+        "OverallSentiment": "Neutral"
+    },
+    "5": {
+        "Text": "algo esta mal",
+        "Sentence": ["algo", "esta", "mal"],
+        "Sentiment": ["Neutral", "Neutral", "Negative"],
+        "OverallSentiment": "Neutral"
+    },
+    "6": {
+        "Text": "No eres tan inocente",
+        "Sentence": ["No", "eres", "tan", "inocente"],
+        "Sentiment": ["Neutral", "Neutral", "Neutral", "Neutral"],
+        "OverallSentiment": "Neutral"
+    },
+    "7": {
+        "Text": "You're such a fool.",
+        "Sentence": ["You're", "such", "a", "fool"],
+        "Sentiment": ["Neutral", "Neutral", "Neutral", "Negative"],
+        "OverallSentiment": "Negative"
+    },
+    "8": {
+        "Text": "That was a dumb idea.",
+        "Sentence": ["That", "was", "a", "dumb", "idea"],
+        "Sentiment": ["Neutral", "Neutral", "Neutral", "Negative", "Neutral"],
+        "OverallSentiment": "Negative"
+    },
+    "9": {
+        "Text": "Shut your mouth.",
+        "Sentence": ["Shut", "your", "mouth"],
+        "Sentiment": ["Negative", "Neutral", "Neutral"],
+        "OverallSentiment": "Negative"
+    },
+    "10": {
+        "Text": "This is the worst thing you've ever said.",
+        "Sentence": ["This", "is", "the", "worst", "thing", "you've", "ever", "said"],
+        "Sentiment": ["Neutral", "Neutral", "Neutral", "Negative", "Neutral", "Neutral", "Neutral", "Neutral"],
+        "OverallSentiment": "Negative"
+    },
+    "11": {
+        "Text": "Estás loco.",
+        "Sentence": ["Estás", "loco"],
+        "Sentiment": ["Neutral", "Negative"],
+        "OverallSentiment": "Negative"
+    },
+    "12": {
+        "Text": "Ni siquiera puedes pensar.",
+        "Sentence": ["Ni", "siquiera", "puedes", "pensar"],
+        "Sentiment": ["Neutral", "Neutral", "Neutral", "Negative"],
+        "OverallSentiment": "Negative"
+    },
+    "13": {
+        "Text": "You can't do anything right.",
+        "Sentence": ["You", "can't", "do", "anything", "right"],
+        "Sentiment": ["Neutral", "Negative", "Neutral", "Neutral", "Neutral"],
+        "OverallSentiment": "Negative"
+    },
+    "14": {
+        "Text": "Nobody likes you.",
+        "Sentence": ["Nobody", "likes", "you"],
+        "Sentiment": ["Negative", "Positive", "Neutral"],
+        "OverallSentiment": "Negative"
+    },
+    "15": {
+        "Text": "How can someone be this clueless?",
+        "Sentence": ["How", "can", "someone", "be", "this", "clueless"],
+        "Sentiment": ["Neutral", "Neutral", "Neutral", "Neutral", "Neutral", "Negative"],
+        "OverallSentiment": "Negative"
+    },
+    "16": {
+        "Text": "That was pathetic.",
+        "Sentence": ["That", "was", "pathetic"],
+        "Sentiment": ["Neutral", "Neutral", "Negative"],
+        "OverallSentiment": "Negative"
+    },
+    "17": {
+        "Text": "Stop being so annoying.",
+        "Sentence": ["Stop", "being", "so", "annoying"],
+        "Sentiment": ["Negative", "Neutral", "Neutral", "Negative"],
+        "OverallSentiment": "Negative"
+    },
+    "18": {
+        "Text": "Du bist so nutzlos.",
+        "Sentence": ["Du", "bist", "so", "nutzlos"],
+        "Sentiment": ["Neutral", "Neutral", "Neutral", "Negative"],
+        "OverallSentiment": "Negative"
+    },
+    "19": {
+        "Text": "Cállate ya.",
+        "Sentence": ["Cállate", "ya"],
+        "Sentiment": ["Negative", "Neutral"],
+        "OverallSentiment": "Negative"
+    },
+    "20": {
+        "Text": "You really did not messed this up.",
+        "Sentence": ["You", "really", "did", "not", "messed", "this", "up"],
+        "Sentiment": ["Neutral", "Neutral", "Neutral", "Negative", "Negative", "Neutral", "Neutral"],
+        "OverallSentiment": "Negative"
+    }
+}

@@ -1,205 +1,162 @@
 {
     "1": {
-        "abusive-words-found": [
-            {
-                "word_in_text": "stupid.",
-                "matched_with": "stupid",
-                "similarity": 0.868,
-                "severity": "high",
-                "text_analyzed": "You are not that stupid.",
-                "sentiment": {
-                    "sentiment": "POSITIVE",
-                    "confidence": 0.992
-                }
-            }
-        ]
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.985
+        },
+        "text_analyze": "RT @xdNiBoR: That is absolutely insane 🤯 https://t.co/KONsRV9sJE"
     },
     "2": {
-        "abusive-words-found": [
-            {
-                "word_in_text": "stupid",
-                "matched_with": "stupid",
-                "similarity": 1.0,
-                "severity": "high",
-                "text_analyzed": "You are stupid",
-                "sentiment": {
-                    "sentiment": "NEGATIVE",
-                    "confidence": 1.0
-                }
-            }
-        ]
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.998
+        },
+        "text_analyze": "RT @Rothmus: Butchers and mutilators. https://t.co/d6SuhpiGOL"
     },
     "3": {
         "abusive-words_found": [],
         "sentiment": {
             "sentiment": "NEGATIVE",
-            "confidence": 0.998
+            "confidence": 0.978
         },
-        "text_analyze": "Schiesse! du bist dumm"
+        "text_analyze": "@Rothmus 💯"
     },
     "4": {
-        "abusive-words-found": [
-            {
-                "word_in_text": "hate",
-                "matched_with": "hate",
-                "similarity": 1.0,
-                "severity": "high",
-                "text_analyzed": "I hate nothing!",
-                "sentiment": {
-                    "sentiment": "POSITIVE",
-                    "confidence": 0.872
-                }
-            }
-        ]
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.772
+        },
+        "text_analyze": "@RonPaul ❤️"
     },
     "5": {
         "abusive-words_found": [],
         "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.786
+            "sentiment": "POSITIVE",
+            "confidence": 1.0
         },
-        "text_analyze": "algo esta mal"
+        "text_analyze": "RT @JessePeltan: This is beautiful.\n\nThis is timeless.\n\nThis is physics."
     },
     "6": {
         "abusive-words_found": [],
         "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.977
+            "sentiment": "POSITIVE",
+            "confidence": 1.0
         },
-        "text_analyze": "No eres tan inocente"
+        "text_analyze": "RT @iam_smx: The truth sets a man free, and Elon Musk has fearlessly spoken it."
     },
     "7": {
-        "abusive-words-found": [
-            {
-                "word_in_text": "fool.",
-                "matched_with": "fools",
-                "similarity": 0.759,
-                "severity": "medium",
-                "text_analyzed": "You're such a fool.",
-                "sentiment": {
-                    "sentiment": "NEGATIVE",
-                    "confidence": 1.0
-                }
-            }
-        ]
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.971
+        },
+        "text_analyze": "You are the media now https://t.co/YadpsV6a7K"
     },
     "8": {
-        "abusive-words-found": [
-            {
-                "word_in_text": "dumb",
-                "matched_with": "dumb",
-                "similarity": 1.0,
-                "severity": "high",
-                "text_analyzed": "That was a dumb idea.",
-                "sentiment": {
-                    "sentiment": "NEGATIVE",
-                    "confidence": 1.0
-                }
-            }
-        ]
+        "abusive-words_found": [],
+        "sentiment": {
+            "sentiment": "NEGATIVE",
+            "confidence": 0.999
+        },
+        "text_analyze": "RT @BasedMikeLee: Federal spending has become excessive \n\nThe resulting inflation harms Americans\n\nAnd weaponizes government \n\nThe Senate c…"
     },
     "9": {
         "abusive-words_found": [],
         "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.998
+            "sentiment": "POSITIVE",
+            "confidence": 0.802
         },
-        "text_analyze": "Shut your mouth."
+        "text_analyze": "RT @teslaownersSV: BREAKING: 𝕏 is now the #1 news app on the AppStore in Qatar. https://t.co/vvYPf4ZbXG"
     },
     "10": {
         "abusive-words_found": [],
         "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 1.0
+            "sentiment": "POSITIVE",
+            "confidence": 0.995
         },
-        "text_analyze": "This is the worst thing you've ever said."
+        "text_analyze": "RT @teslaownersSV: Tesla is far ahead in self-driving cars.\n\nNvidia CEO Jensen Huang\n https://t.co/TigJ3hlny4"
     },
     "11": {
         "abusive-words_found": [],
         "sentiment": {
             "sentiment": "NEGATIVE",
-            "confidence": 0.972
+            "confidence": 0.993
         },
-        "text_analyze": "Est\u00c3\u00a1s loco."
+        "text_analyze": "RT @RuiHuang_art: Type IV: 10⁴⁶W🧿 https://t.co/TRwLjW0zKH"
     },
     "12": {
         "abusive-words_found": [],
         "sentiment": {
             "sentiment": "NEGATIVE",
-            "confidence": 0.672
+            "confidence": 0.991
         },
-        "text_analyze": "Ni siquiera puedes pensar."
+        "text_analyze": "RT @RandPaul: I want to see the tax cuts made permanent, but I also want to see the $5 trillion in new debt removed from the bill. At least…"
     },
     "13": {
         "abusive-words_found": [],
         "sentiment": {
-            "sentiment": "NEGATIVE",
+            "sentiment": "POSITIVE",
             "confidence": 1.0
         },
-        "text_analyze": "You can't do anything right."
+        "text_analyze": "@RandPaul Thank you"
     },
     "14": {
         "abusive-words_found": [],
         "sentiment": {
             "sentiment": "NEGATIVE",
-            "confidence": 0.999
+            "confidence": 0.995
         },
-        "text_analyze": "Nobody likes you."
+        "text_analyze": "In November next year, we fire all politicians who betrayed the American people https://t.co/GTRc9Rjled"
     },
     "15": {
         "abusive-words_found": [],
         "sentiment": {
             "sentiment": "NEGATIVE",
-            "confidence": 0.999
+            "confidence": 0.997
         },
-        "text_analyze": "How can someone be this clueless?"
+        "text_analyze": "Get the Performance terminal from @Starlink! https://t.co/Cbz0acOjRX"
     },
     "16": {
         "abusive-words_found": [],
         "sentiment": {
             "sentiment": "NEGATIVE",
-            "confidence": 1.0
+            "confidence": 0.992
         },
-        "text_analyze": "That was pathetic."
+        "text_analyze": "🇺🇸 https://t.co/w6E9pLrv45"
     },
     "17": {
         "abusive-words_found": [],
         "sentiment": {
             "sentiment": "NEGATIVE",
-            "confidence": 0.995
+            "confidence": 0.976
         },
-        "text_analyze": "Stop being so annoying."
+        "text_analyze": "Simple math https://t.co/ZQn6mXTI86"
     },
     "18": {
         "abusive-words_found": [],
         "sentiment": {
             "sentiment": "NEGATIVE",
-            "confidence": 0.996
+            "confidence": 0.997
         },
-        "text_analyze": "Du bist so nutzlos."
+        "text_analyze": "RT @BasedMikeLee: Government-funded DNC propaganda must end\n\nRestore Smith-Mundt\n\nDefund PBS/NPR"
     },
     "19": {
         "abusive-words_found": [],
         "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 0.994
+            "sentiment": "NEGATIVE",
+            "confidence": 1.0
         },
-        "text_analyze": "C\u00c3\u00a1llate ya."
+        "text_analyze": "Congress is making America bankrupt https://t.co/cMP8XWO6dc"
     },
     "20": {
         "abusive-words_found": [],
         "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 0.974
-        },
-        "text_analyze": "You really did not messed this up."
-    },
-    "21": {
-        "abusive-words_found": [],
-        "sentiment": {
             "sentiment": "NEGATIVE",
-            "confidence": 0.983
+            "confidence": 0.989
         },
-        "text_analyze": "Idi0t f00l."
+        "text_analyze": "It will massively increase the already gigantic budget deficit to $2.5 trillion (!!!) and burden America citizens with crushingly unsustainable debt https://t.co/dHCj3pprJO"
     }
 }

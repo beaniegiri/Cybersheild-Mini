@@ -1,3 +1,20 @@
+"""text_processing.py
+
+This module provides utility functions for processing and manipulating text data.
+It includes features such as text normalization, tokenization, removal of stopwords,
+and other common text preprocessing tasks used in natural language processing (NLP) pipelines.
+
+Functions:
+    - clean_text: Cleans the input text by removing URLs, emojis, and non-standard characters.
+
+Typical usage example:
+    import text_processing
+    processed_text = text_processing.clean(raw_text)
+
+Author: Center for Equitable Artifical Intelligence and Machine Learning Systems (CEAMLS)
+License: MIT License
+"""
+
 import re
 import string
 

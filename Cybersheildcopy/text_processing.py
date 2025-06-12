@@ -53,6 +53,17 @@ class TextCleaner:
         r"[^A-Za-z0-9\s" + re.escape(string.punctuation) + "]"
     )
 
+    def __init__(self, extract_urls: bool = True, extract_emojis: bool = True):
+        """
+        Initializes the TextCleaner with options to extract URLs and emojis.
+
+        Args:
+            extract_urls (bool): If True, URLs will be extracted and removed from the text.
+            extract_emojis (bool): If True, emojis will be extracted and removed from the text.
+        """
+        self.extract_urls = extract_urls
+        self.extract_emojis = extract_emojis
+
     def clean(self, text: str):
         """
         Cleans the input text by removing URLs, emojis, and non-standard characters.
@@ -71,9 +82,13 @@ class TextCleaner:
             "emojis": self.EMOJI_PATTERN.findall(text),
             "non_standard": self.NON_STANDARD_PATTERN.findall(text),
         }
-        text = self.URL_PATTERN.sub("", text)
-        text = self.EMOJI_PATTERN.sub("", text)
-        text = self.NON_STANDARD_PATTERN.sub("", text)
+        if self.extract_urls:
+            text = self.URL_PATTERN.sub("", text)
+
+        if self.extract_emojis:
+            text = self.EMOJI_PATTERN.sub("", text)
+
+        # text = self.NON_STANDARD_PATTERN.sub("", text)
         text = " ".join(text.split())
         return text, removed
 

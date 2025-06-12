@@ -1,0 +1,73 @@
+import re
+import string
+
+
+class TextCleaner:
+    """
+    A utility class for cleaning text by removing URLs, emojis, and non-standard characters.
+
+    Attributes:
+        URL_PATTERN (re.Pattern): Compiled regex pattern to match URLs.
+        EMOJI_PATTERN (re.Pattern): Compiled regex pattern to match emojis.
+        NON_STANDARD_PATTERN (re.Pattern): Compiled regex pattern to match non-standard characters.
+
+    Methods:
+        clean(text: str) -> Tuple[str, dict]:
+            Cleans the input text by removing URLs, emojis, and non-standard characters.
+            Returns a tuple containing the cleaned text and a dictionary with lists of removed items:
+                - 'urls': List of URLs removed from the text.
+                - 'emojis': List of emojis removed from the text.
+                - 'non_standard': List of non-standard characters removed from the text.
+    """
+
+    URL_PATTERN = re.compile(r"https?://\S+|www\.\S+")
+    EMOJI_PATTERN = re.compile(
+        "["
+        "\U0001f600-\U0001f64f"  # emoticons
+        "\U0001f300-\U0001f5ff"  # symbols & pictographs
+        "\U0001f680-\U0001f6ff"  # transport & map symbols
+        "\U0001f1e0-\U0001f1ff"  # flags (iOS)
+        "\U00002700-\U000027bf"  # Dingbats
+        "\U000024c2-\U0001f251"
+        "]+",
+        flags=re.UNICODE,
+    )
+    NON_STANDARD_PATTERN = re.compile(
+        r"[^A-Za-z0-9\s" + re.escape(string.punctuation) + "]"
+    )
+
+    def clean(self, text: str):
+        """
+        Cleans the input text by removing URLs, emojis, and non-standard characters.
+
+        Args:
+            text (str): The input string to be cleaned.
+
+        Returns:
+            Tuple[str, dict]: A tuple containing the cleaned text and a dictionary with lists of removed elements:
+                - 'urls': List of URLs removed from the text.
+                - 'emojis': List of emojis removed from the text.
+                - 'non_standard': List of non-standard characters removed from the text.
+        """
+        removed = {
+            "urls": self.URL_PATTERN.findall(text),
+            "emojis": self.EMOJI_PATTERN.findall(text),
+            "non_standard": self.NON_STANDARD_PATTERN.findall(text),
+        }
+        text = self.URL_PATTERN.sub("", text)
+        text = self.EMOJI_PATTERN.sub("", text)
+        text = self.NON_STANDARD_PATTERN.sub("", text)
+        text = " ".join(text.split())
+        return text, removed
+
+
+# Example usage:
+if __name__ == "__main__":
+    cleaner = TextCleaner()
+    sample_text = "Check this out! https://example.com 😊 #awesome @user"
+
+    cleaned_text, removed_items = cleaner.clean(sample_text)
+
+    print("Original Text:", sample_text)
+    print("Cleaned Text:", cleaned_text)
+    print("Removed Items:", removed_items)

@@ -1,17 +1,17 @@
 {
     
         "1": {
-            "TEXT": "You are not that stupid.",
+            "TEXT": "Check this out! https://example.com 😊 #awesome @user.",
             "Sentiment": "Positive",
             "Language": "EN"
         },
         "2": {
-            "TEXT": "You are stupid",
+            "TEXT": "https://example.com",
             "Sentiment": "Negative",
             "Language": "EN"
         },
         "3": {
-            "TEXT": "Schiesse! du bist dumm",
+            "TEXT": "Visit www.google.com/search?q=hello",
             "Sentiment": "Negative",
             "Language": "DE"
         },
@@ -21,7 +21,7 @@
             "Language": "EN"
         },
         "5": {
-            "TEXT": "algo esta mal",
+            "TEXT": "😊 ",
             "Sentiment": "Netural",
             "Language": "ES"
         },

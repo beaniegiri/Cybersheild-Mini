@@ -4,72 +4,67 @@
         "sentiment": {
             "bert": {
                 "sentiment": "POSITIVE",
-                "confidence": 0.992
-            },
-            "vader": {
-                "sentiment": "positive",
-                "compound_score": 0.417,
-                "positive": 0.41,
-                "negative": 0.0,
-                "neutral": 0.59
-            },
-            "roberta": {
-                "sentiment": "negative",
-                "confidence": 0.792
-            },
-            "hatebert": {
-                "label": "normal",
-                "confidence": 0.647
-            },
-            "textblob": {
-                "polarity": -0.8,
-                "subjectivity": 1.0,
-                "sentiment": "negative"
-            }
-        },
-        "text_analyze": "You are not that stupid."
-    },
-    "2": {
-        "abusive-words-found": [
-            {
-                "word": "stupid",
-                "severity": "high"
-            }
-        ],
-        "text_analyzed": "You are stupid",
-        "sentiment": {
-            "bert": {
-                "sentiment": "NEGATIVE",
                 "confidence": 1.0
             },
             "vader": {
-                "sentiment": "negative",
-                "compound_score": -0.527,
-                "positive": 0.0,
-                "negative": 0.63,
-                "neutral": 0.37
+                "sentiment": "positive",
+                "compound_score": 0.659,
+                "positive": 0.468,
+                "negative": 0.0,
+                "neutral": 0.532
             },
             "roberta": {
-                "sentiment": "negative",
-                "confidence": 0.971
+                "sentiment": "positive",
+                "confidence": 0.976
             },
             "hatebert": {
                 "label": "normal",
-                "confidence": 0.628
+                "confidence": 0.805
             },
             "textblob": {
-                "polarity": -0.8,
+                "polarity": 1.0,
                 "subjectivity": 1.0,
-                "sentiment": "negative"
+                "sentiment": "positive"
             }
-        }
+        },
+        "text_analyze": "Check this out! \u00f0\u0178\u02dc\u0160 #awesome @user."
+    },
+    "2": {
+        "abusive-words_found": [],
+        "sentiment": {
+            "bert": {
+                "sentiment": "POSITIVE",
+                "confidence": 0.748
+            },
+            "vader": {
+                "sentiment": "neutral",
+                "compound_score": 0.0,
+                "positive": 0.0,
+                "negative": 0.0,
+                "neutral": 0.0
+            },
+            "roberta": {
+                "sentiment": "neutral",
+                "confidence": 0.451
+            },
+            "hatebert": {
+                "label": "normal",
+                "confidence": 0.581
+            },
+            "textblob": {
+                "polarity": 0.0,
+                "subjectivity": 0.0,
+                "sentiment": "neutral"
+            }
+        },
+        "text_analyze": ""
     },
     "3": {
         "abusive-words_found": [],
         "sentiment": {
             "bert": {
-                "sentiment": "NEGATIVE",
-                "confidence": 0.998
+                "sentiment": "POSITIVE",
+                "confidence": 0.994
             },
             "vader": {
                 "sentiment": "neutral",
@@ -80,11 +75,11 @@
             },
             "roberta": {
                 "sentiment": "neutral",
-                "confidence": 0.736
+                "confidence": 0.724
             },
             "hatebert": {
                 "label": "normal",
-                "confidence": 0.628
+                "confidence": 0.643
             },
             "textblob": {
                 "polarity": 0.0,
@@ -92,7 +87,7 @@
                 "sentiment": "neutral"
             }
         },
-        "text_analyze": "Schiesse! du bist dumm"
+        "text_analyze": "Visit"
     },
     "4": {
         "abusive-words-found": [
@@ -134,7 +129,7 @@
         "sentiment": {
             "bert": {
                 "sentiment": "NEGATIVE",
-                "confidence": 0.786
+                "confidence": 0.697
             },
             "vader": {
                 "sentiment": "neutral",
@@ -145,11 +140,11 @@
             },
             "roberta": {
                 "sentiment": "neutral",
-                "confidence": 0.618
+                "confidence": 0.746
             },
             "hatebert": {
                 "label": "normal",
-                "confidence": 0.683
+                "confidence": 0.643
             },
             "textblob": {
                 "polarity": 0.0,
@@ -157,7 +152,7 @@
                 "sentiment": "neutral"
             }
         },
-        "text_analyze": "algo esta mal"
+        "text_analyze": "\u00f0\u0178\u02dc\u0160"
     },
     "6": {
         "abusive-words_found": [],

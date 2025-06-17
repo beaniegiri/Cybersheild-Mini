@@ -79,9 +79,35 @@ if __name__ == "__main__":
     
     # Sample data
     texts = [
-        {"id": 1, "text": "I love this product! It works great."},
-        {"id": 2, "text": "This is the worst experience I've ever had."},
-        {"id": 3, "text": "The movie was okay, not the best but not the worst."},
+         "1": {
+            "TEXT": "You are not that stupid.",
+            "Sentiment": "Positive",
+            "Language": "EN"
+        },
+        "2": {
+            "TEXT": "You are stupid",
+            "Sentiment": "Negative",
+            "Language": "EN"
+        },
+        "3": {
+            "TEXT": "Schiesse! du bist dumm",
+            "Sentiment": "Negative",
+            "Language": "DE"
+        },
+        "4": {
+            "TEXT": "I hate nothing!",
+            "Sentiment": "Neutral",
+            "Language": "EN"
+        },
+        "5": {
+            "TEXT": "algo esta mal",
+            "Sentiment": "Negative",
+            "Language": "ES"
+        },
+        "6": {
+            "TEXT": "No eres tan inocente",
+            "Sentiment": "Neutral",
+            "Language": "ES"}
     ]
     
     # Use different analysis methods

@@ -29,7 +29,7 @@ def preprocess_input(text):
     cleaned_text = cleaned_text[0]  # Extract the cleaned text from the tuple
     return cleaned_text
     
-#Step2: Analyze sentiment of the input text
+#Step3: Analyze sentiment of the input text
 def analyze_sentiment(text):
         # Preprocess the text
         cleaned_text = preprocess_input(text)

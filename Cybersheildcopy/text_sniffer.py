@@ -3,11 +3,14 @@ import torch
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from textblob import TextBlob
+from text_processing import TextCleaner
 
+cleaner = TextCleaner()
 bert_analyzer=pipeline("sentiment-analysis")
 roberta_analyzer=pipeline('sentiment-analysis',model="cardiffnlp/twitter-roberta-base-sentiment")
-
 vader_analyzer=SentimentIntensityAnalyzer()
+
+
 # HateBERT (HateXplain)
 hatebert_model_name = "Hate-speech-CNERG/bert-base-uncased-hatexplain"
 hatebert_tokenizer = AutoTokenizer.from_pretrained(hatebert_model_name)
@@ -18,14 +21,24 @@ hatebert_analyzer = pipeline("text-classification", model=hatebert_model, tokeni
 def load_abusive_words(file_path):
     with open(file_path, 'r') as file:
         return [word.strip().lower() for word in file.readlines()]
+
+# Step 2: Preprocess input text
+def preprocess_input(text):
+    # Preprocess the text (e.g., remove special characters, lowercasing)
+    cleaned_text=(cleaner.clean(text))
+    cleaned_text = cleaned_text[0]  # Extract the cleaned text from the tuple
+    return cleaned_text
     
-#Step2: Analyze sentiment of the input text
+#Step3: Analyze sentiment of the input text
 def analyze_sentiment(text):
-        bert_result=bert_analyzer(text)[0]
-        vader_result=vader_analyzer.polarity_scores(text)
-        roberta_result = roberta_analyzer(text)[0]
-        hatebert_result = hatebert_analyzer(text)[0]
-        textblob_result = TextBlob(text).sentiment
+        # Preprocess the text
+        cleaned_text = preprocess_input(text)
+        # Analyze sentiment using different models
+        bert_result=bert_analyzer(cleaned_text)[0]
+        vader_result=vader_analyzer.polarity_scores(cleaned_text)
+        roberta_result = roberta_analyzer(cleaned_text)[0]
+        hatebert_result = hatebert_analyzer(cleaned_text)[0]
+        textblob_result = TextBlob(cleaned_text).sentiment
 
         return{
             "bert":{
@@ -61,8 +74,9 @@ def analyze_sentiment(text):
 
 # Step 3: Check text for abusive words
 def detect_abuse(text, abusive_words):
+    cleaned_text = preprocess_input(text)  # Preprocess the input text
     detected = []
-    words_in_text = text.lower().split()  # Split input text into words
+    words_in_text = cleaned_text.lower().split()  # Split input text into words
     sentiment_report=analyze_sentiment(text)
     for word in abusive_words:
         if word in words_in_text:
@@ -81,14 +95,14 @@ def detect_abuse(text, abusive_words):
         return{
             'abusive-words-found':detected,
             #'sentiment':sentiment_report
-             "text_analyzed": text,
+             "text_analyzed": cleaned_text,
             "sentiment":sentiment_report
         }
     else:
         return{
             "abusive-words_found":[],
             'sentiment':sentiment_report, #this one 
-            "text_analyze":text
+            "text_analyze":cleaned_text
         }
     # return {
     #     "abusive_words_found": detected,

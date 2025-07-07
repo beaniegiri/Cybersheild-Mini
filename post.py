@@ -23,7 +23,7 @@ print(f"User ID for @{USERNAME}: {user_id}")
 # Step 2: Paginate through tweets
 tweets = []
 next_token = None
-max_pages = 10  # You can increase this
+max_pages = 10  # can increase this
 
 for _ in range(max_pages):
     url = f"https://api.twitter.com/2/users/{user_id}/tweets"

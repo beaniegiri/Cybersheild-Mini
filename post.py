@@ -14,7 +14,7 @@ import json
 # user_res = requests.get(user_url, headers=headers).json()
 
 # if 'data' not in user_res:
-#     print("❌ Couldn't find user:", user_res.get("errors", user_res))
+#     print("Couldn't find user:", user_res.get("errors", user_res))
 #     exit()
 
 # user_id = user_res['data']['id']
@@ -87,11 +87,11 @@ def fetch_user_tweets(username, max_pages=10, save_to_file=True, file_name=None)
     user_res = requests.get(user_url, headers=headers).json()
 
     if 'data' not in user_res:
-        print(f"❌ Couldn't find user: {user_res.get('errors', user_res)}")
+        print(f"Couldn't find user: {user_res.get('errors', user_res)}")
         return []
 
     user_id = user_res['data']['id']
-    print(f"🔍 User ID for @{username}: {user_id}")
+    print(f"User ID for @{username}: {user_id}")
 
     # Step 2: Fetch tweets
     tweets = []
@@ -111,7 +111,7 @@ def fetch_user_tweets(username, max_pages=10, save_to_file=True, file_name=None)
 
         new_tweets = res.get("data", [])
         tweets.extend(new_tweets)
-        print(f"📦 Fetched {len(new_tweets)} tweets (Total: {len(tweets)})")
+        print(f"Fetched {len(new_tweets)} tweets (Total: {len(tweets)})")
 
         next_token = res.get("meta", {}).get("next_token")
         if not next_token:
@@ -125,7 +125,7 @@ def fetch_user_tweets(username, max_pages=10, save_to_file=True, file_name=None)
             file_name = f"{username}_tweets.json"
         with open(file_name, "w", encoding="utf-8") as f:
             json.dump(tweets, f, ensure_ascii=False, indent=4)
-        print(f"💾 Tweets saved to {file_name}")
+        print(f"Tweets saved to {file_name}")
 
     return tweets
 

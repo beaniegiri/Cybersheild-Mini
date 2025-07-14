@@ -1,0 +1,22 @@
+{
+  "name": "hello-electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx electron .",
+    "watch": "nodemon --exec electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^36.4.0"
+  },
+  "dependencies": {
+    "electron": "^latest",
+    "nodemon": "^3.1.10",
+    "python": "^0.0.4",
+    "shell": "^0.12.0"
+  }
+}

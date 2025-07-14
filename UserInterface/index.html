@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' ; connect-src 'self'; img-src 'self' data:; font-src 'self';">
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Cyber Shield</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="stylesheet" href="welcome.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: center;">
+            <h1>Cyber Shield</h1>
+            <img src="logo.png" alt="Cyber Shield Logo" class="logo-animate" style="height:60px; vertical-align:top; margin-right:15px;">
+        </div>
+    </div>  
+        <div class="analysis-container">
+  <!-- Left Side: Input Section -->
+  <div class="input-section">
+    <div class="section-title">Text Analysis Input</div>
+    <p>Enter text content to analyze for abusive language and sentiment</p>
+    <textarea id="inputText" placeholder="Enter your text here for analysis..."></textarea>
+    
+    <button id="analyzeBtn" class="button">Analyze Text</button>
+    <button id="clearBtn" class="button secondary">Clear</button>
+  </div>
+
+  <!-- Right Side: Output Section -->
+  <div class="output-section">
+    <div class="section-title">Analysis Results</div>
+    <p>Real-time detection results and sentiment analysis</p>
+    <div id="results" class="result-section">
+      No analysis results yet<br/>
+      Enter text and click analyze to begin
+    </div>
+  </div>
+</div>  
+        
+        <div class="section">
+            <div class="section-title">DistilBERT Analysis</div>
+            <p>Advanced transformer model for accurate sentiment classification</p>
+            
+            <div class="feature-card">
+                <h3>Real-time Processing</h3>
+                <p>Instant analysis with word embeddings and ML pipeline integration</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Content Protection</h3>
+                <p>Comprehensive detection of harmful and inappropriate language</p>
+            </div>
+        </div>
+    </div>
+    <h2>Fetch Data</h2>
+    <input id="token" placeholder="Access Token" size="80"><br><br>
+    <input id="apiUrl" placeholder="API URL" size="100"><br><br>
+    <button id="fetchBtn">Fetch Data</button>
+
+    <script src="welcome.js"></script>
+</body>
+</html>

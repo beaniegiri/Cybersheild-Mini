@@ -82,29 +82,36 @@ function createWindow() {
     
     pyProcess.on('close', (code) => {
       if (code === 0) {
-        event.reply('fetcher-success', result);
-      } else {
-        event.reply('fetcher-error', error || 'Unknown error occurred');
-      }
-    });
+      
+          event.reply('fetcher-success', result); // Send the parsed result back to the renderer process
+          console.log('Fetcher script executed successfully:', result);
+        }
+        
+      else {
+          event.reply('fetcher-error', error || 'Unknown error occurred');
+      // }
+    };
   });
 
 
   //saving data to a file
+  ipcMain.removeAllListeners('save-file'); // Remove any previous listeners to avoid duplicates
   ipcMain.on('save-file', (event, data, filename) => {
     const filePath = path.join(__dirname, filename);
   
-    fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf8', (err) => {
-      if (err) {
-        console.error(' Error saving file:', err);
-        event.reply('save-file-error', 'Failed to save file');
-      } else {
-        console.log(`File saved successfully at ${filePath}`);
-        event.reply('save-file-success', `File saved successfully at ${filePath}`);
-      }
-    });
-  });
   
+   // Read the existing file
+   fs.appendFile(filePath, JSON.stringify(data, null, 2) + ',\n', 'utf8', (err) => {
+    if (err) {
+      console.error(' Error saving file:', err);
+      event.reply('save-file-error', 'Failed to save file');
+    } else {
+      console.log(`File saved successfully at ${filePath}`);
+      event.reply('save-file-success', `File saved successfully at ${filePath}`);
+    }
+  });
+  });
+});
 
 // ---------- app lifecycle ----------
 app.whenReady().then(() => {

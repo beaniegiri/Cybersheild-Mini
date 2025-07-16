@@ -97,10 +97,12 @@ function createWindow() {
   ipcMain.removeAllListeners('save-file'); // Remove any previous listeners to avoid duplicates
   ipcMain.on('save-file', (event, data, filename) => {
     const filePath = path.join(__dirname, filename);
-  
-  
+  try{
+    const fixed = data.replace(/'/g, '"'); // Replace single quotes with double quotes for valid JSON format
+    const parsedData = JSON.parse(fixed); // Parse the fixed data to ensure it's valid JSON
+   
    // Read the existing file
-   fs.appendFile(filePath, JSON.parse(data, null, 2), 'utf8', (err) => {
+   fs.appendFile(filePath, JSON.stringify(paesedData, null, 2)+'\n', 'utf8', (err) => {
     if (err) {
       console.error(' Error saving file:', err);
       event.reply('save-file-error', 'Failed to save file');
@@ -109,6 +111,11 @@ function createWindow() {
       event.reply('save-file-success', `File saved successfully at ${filePath}`);
     }
   });
+  }
+  catch (error) {
+    console.error('Error parsing data:', error);
+    event.reply('save-file-error', 'Failed to parse data');
+  }
   });
 });
 

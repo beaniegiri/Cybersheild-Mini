@@ -5,7 +5,7 @@ if __name__ == "__main__":
     # Load abusive words
     abusive_words = load_abusive_words("abusive_words.txt")
     
-    file_path= "numbered_tweets.json"  # Path to the JSON file containing user text
+    file_path= "social_media_data.json"  # Path to the JSON file containing user text
 
 # Open and read the file
     try:

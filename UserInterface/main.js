@@ -69,14 +69,13 @@ function createWindow() {
     console.log('We are testing this Fetcher script started with token:', token, 'and API URL:', apiUrl);
   
     let result = '';
-    let error = '';
   
     pyProcess.stdout.on('data', (data) => {
-      result += data.toString(); //adding the data received from the Python script to the result variable
+      result += data; //adding the data received from the Python script to the result variable
     });
   
     pyProcess.stderr.on('data', (data) => {
-      error += data.toString(); //adding any error data received from the Python script to the error variable
+      console.error('Python error:', data.toString()); //adding any error data received from the Python script to the error variable
     });
   
     
@@ -101,7 +100,7 @@ function createWindow() {
   
   
    // Read the existing file
-   fs.appendFile(filePath, JSON.stringify(data, null, 2) + ',\n', 'utf8', (err) => {
+   fs.appendFile(filePath, JSON.parse(data, null, 2), 'utf8', (err) => {
     if (err) {
       console.error(' Error saving file:', err);
       event.reply('save-file-error', 'Failed to save file');

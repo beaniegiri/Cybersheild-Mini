@@ -19,7 +19,7 @@ class Fetcher:
     def save_to_file(self, data, filename='social_media_data.json'):
         try: 
             with open(filename, 'a', encoding="utf-8") as file:
-                json.dumps(data, file, indent=4, ensure_ascii=False)
+                json.loads(data, file, indent=4, ensure_ascii=False)
             print(f"Data saved to {filename}")
         except IOError as e:
             print(f"Error saving data to file: {e}")

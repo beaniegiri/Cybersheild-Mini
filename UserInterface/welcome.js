@@ -45,20 +45,6 @@ function clearText() {
 
 window.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded and parsed');
-  // const fetchBtn = document.getElementById('fetch-btn');
-  // fetchBtn.addEventListener('click', () => {
-  //   const token = document.getElementById('token').value.trim();
-  //   const apiUrl = document.getElementById('apiUrl').value.trim();
-
-  //   if (!token || !apiUrl) {
-  //     alert("Please enter both Access Token and API URL.");
-  //     return;
-  //   }
-
-  //   alert("Fetching data... Please wait.");
-  //   console.log('Fetch button clicked with:', token, apiUrl);
-
-  //   window.electronAPI.fetchInstagramComments(token, apiUrl);
 
     window.electronAPI.onSuccess((data) => {
       console.log('Data received:', data);

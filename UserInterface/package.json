@@ -11,10 +11,9 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "electron": "^36.4.0"
+    "electron": "^36.7.1"
   },
   "dependencies": {
-    "electron": "^latest",
     "nodemon": "^3.1.10",
     "python": "^0.0.4",
     "shell": "^0.12.0"

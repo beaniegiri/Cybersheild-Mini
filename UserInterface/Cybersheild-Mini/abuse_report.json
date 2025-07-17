@@ -1,162 +1,35 @@
 {
-    "1": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.964
-        },
-        "text_analyze": "RT @xdNiBoR: That is absolutely insane 🤯"
+    "18050898926161754": {
+        "original_text": "Amazing",
+        "abuse_report": {
+            "abusive-words_found": [],
+            "sentiment": {
+                "sentiment": "POSITIVE",
+                "confidence": 1.0
+            },
+            "text_analyze": "Amazing"
+        }
     },
-    "2": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.999
-        },
-        "text_analyze": "RT @Rothmus: Butchers and mutilators."
+    "18312869152215742": {
+        "original_text": "👏there you go",
+        "abuse_report": {
+            "abusive-words_found": [],
+            "sentiment": {
+                "sentiment": "POSITIVE",
+                "confidence": 1.0
+            },
+            "text_analyze": "there you go"
+        }
     },
-    "3": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.962
-        },
-        "text_analyze": "@Rothmus"
-    },
-    "4": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 0.82
-        },
-        "text_analyze": "@RonPaul"
-    },
-    "5": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 1.0
-        },
-        "text_analyze": "RT @JessePeltan: This is beautiful. This is timeless. This is physics."
-    },
-    "6": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 1.0
-        },
-        "text_analyze": "RT @iam_smx: The truth sets a man free, and Elon Musk has fearlessly spoken it."
-    },
-    "7": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 0.995
-        },
-        "text_analyze": "You are the media now"
-    },
-    "8": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.999
-        },
-        "text_analyze": "RT @BasedMikeLee: Federal spending has become excessive The resulting inflation harms Americans And weaponizes government The Senate c…"
-    },
-    "9": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 0.996
-        },
-        "text_analyze": "RT @teslaownersSV: BREAKING: is now the #1 news app on the AppStore in Qatar."
-    },
-    "10": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 0.998
-        },
-        "text_analyze": "RT @teslaownersSV: Tesla is far ahead in self-driving cars. Nvidia CEO Jensen Huang"
-    },
-    "11": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.977
-        },
-        "text_analyze": "RT @RuiHuang_art: Type IV: 10⁴⁶W🧿"
-    },
-    "12": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.991
-        },
-        "text_analyze": "RT @RandPaul: I want to see the tax cuts made permanent, but I also want to see the $5 trillion in new debt removed from the bill. At least…"
-    },
-    "13": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 1.0
-        },
-        "text_analyze": "@RandPaul Thank you"
-    },
-    "14": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.992
-        },
-        "text_analyze": "In November next year, we fire all politicians who betrayed the American people"
-    },
-    "15": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.987
-        },
-        "text_analyze": "Get the Performance terminal from @Starlink!"
-    },
-    "16": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 0.748
-        },
-        "text_analyze": ""
-    },
-    "17": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "POSITIVE",
-            "confidence": 0.994
-        },
-        "text_analyze": "Simple math"
-    },
-    "18": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.997
-        },
-        "text_analyze": "RT @BasedMikeLee: Government-funded DNC propaganda must end Restore Smith-Mundt Defund PBS/NPR"
-    },
-    "19": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 1.0
-        },
-        "text_analyze": "Congress is making America bankrupt"
-    },
-    "20": {
-        "abusive-words_found": [],
-        "sentiment": {
-            "sentiment": "NEGATIVE",
-            "confidence": 0.987
-        },
-        "text_analyze": "It will massively increase the already gigantic budget deficit to $2.5 trillion (!!!) and burden America citizens with crushingly unsustainable debt"
+    "18051691619389658": {
+        "original_text": "wowww",
+        "abuse_report": {
+            "abusive-words_found": [],
+            "sentiment": {
+                "sentiment": "POSITIVE",
+                "confidence": 0.997
+            },
+            "text_analyze": "wowww"
+        }
     }
 }

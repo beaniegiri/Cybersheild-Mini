@@ -6,7 +6,7 @@
 const startButton = document.getElementById('startButton');
 const stopButton = document.getElementById('stopButton');
 const video = document.querySelector('video');
-const fetchButton = document.getElementById('fetch-btn');
+const fetchBtn = document.getElementById('fetch-btn');
 const usernameInput = document.getElementById('username');
 const tweetOutput = document.getElementById('tweet-output');
 
@@ -44,8 +44,35 @@ function clearText() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  const fetchBtn = document.getElementById('fetchBtn');
+  console.log('DOM fully loaded and parsed');
+  // const fetchBtn = document.getElementById('fetch-btn');
+  // fetchBtn.addEventListener('click', () => {
+  //   const token = document.getElementById('token').value.trim();
+  //   const apiUrl = document.getElementById('apiUrl').value.trim();
 
+  //   if (!token || !apiUrl) {
+  //     alert("Please enter both Access Token and API URL.");
+  //     return;
+  //   }
+
+  //   alert("Fetching data... Please wait.");
+  //   console.log('Fetch button clicked with:', token, apiUrl);
+
+  //   window.electronAPI.fetchInstagramComments(token, apiUrl);
+
+    window.electronAPI.onSuccess((data) => {
+      console.log('Data received:', data);
+      tweetOutput.innerHTML = `<strong>Fetched Data:</strong><br/><pre>${JSON.stringify(data, null, 2)}</pre>`;
+      
+      //save the data
+      window.electronAPI.saveFile(data, 'social_media_data.json');
+    });
+
+    window.electronAPI.onError((error) => { 
+      console.error('Error fetching data:', error);
+      tweetOutput.innerHTML = `<strong>Error:</strong> ${error}`;
+    });
+  });
   fetchBtn.addEventListener('click', () => {
     const token = document.getElementById('token').value.trim();
     const apiUrl = document.getElementById('apiUrl').value.trim();
@@ -54,53 +81,14 @@ window.addEventListener('DOMContentLoaded', () => {
       alert("Please enter both Access Token and API URL.");
       return;
     }
+
     alert("Fetching data... Please wait.");
-
     console.log('Fetch button clicked with:', token, apiUrl);
-    window.electronAPI.fetchInstagramComments(token, apiUrl); // Trigger the fetcher
+
+    window.electronAPI.fetchInstagramComments(token, apiUrl);
   });
 
-  //  When fetch is successful
-  window.electronAPI.onSuccess((data) => {
-    console.log('Data received:', data);
 
-    // Display the data in the UI
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = `
-      <strong>Fetched Data:</strong><br/><br/>
-      <pre>${JSON.stringify(data, null, 2)}</pre>
-    `;
-
-    // Save the data as a JSON file
-    // saveDataAsFile(data, 'social_media_data.json');\
-    //Using pr.js save function
-    window.electronAPI.saveFile(data, 'social_media_data.json');
-
-  });
-
-  // When fetch fails
-  window.electronAPI.onError((error) => {
-    const resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = `<strong>Error:</strong> ${error}`;
-  });
-});
-
-// Function to save data as a JSON file
-// function saveDataAsFile(data, filename) {
-//   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-//   const url = URL.createObjectURL(blob);
-
-//   // Create a temporary anchor element to trigger the download
-//   const a = document.createElement('a');
-//   a.href = url;
-//   a.download = filename;
-//   document.body.appendChild(a);
-//   a.click();
-
-//   // Clean up the temporary anchor element
-//   document.body.removeChild(a);
-//   URL.revokeObjectURL(url);
-// }
 
 // Your existing analyzeText() and clearText() functions
 document.getElementById('analyzeBtn').addEventListener('click', analyzeText);

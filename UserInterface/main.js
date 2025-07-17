@@ -65,10 +65,12 @@ function createWindow() {
   // This task is triggered by the fetch button in the UI
   
   ipcMain.on('run-fetcher', (event, token, apiUrl) => {
+    
     const pyProcess = spawn('python3', ['fetcher.py', token, apiUrl]);
     console.log('We are testing this Fetcher script started with token:', token, 'and API URL:', apiUrl);
   
     let result = '';
+    let error = '';
   
     pyProcess.stdout.on('data', (data) => {
       result += data; //adding the data received from the Python script to the result variable
@@ -91,37 +93,60 @@ function createWindow() {
       // }
     };
   });
-
+  });
 
   //saving data to a file
-  ipcMain.removeAllListeners('save-file'); // Remove any previous listeners to avoid duplicates
   ipcMain.on('save-file', (event, data, filename) => {
     const filePath = path.join(__dirname, filename);
+    console.log('Saving to path:', filePath);
+
   try{
     const fixed = data.replace(/'/g, '"'); // Replace single quotes with double quotes for valid JSON format
     const parsedData = JSON.parse(fixed); // Parse the fixed data to ensure it's valid JSON
    
-   // Read the existing file
-   fs.appendFile(filePath, JSON.stringify(paesedData, null, 2)+'\n', 'utf8', (err) => {
-    if (err) {
-      console.error(' Error saving file:', err);
-      event.reply('save-file-error', 'Failed to save file');
-    } else {
-      console.log(`File saved successfully at ${filePath}`);
-      event.reply('save-file-success', `File saved successfully at ${filePath}`);
-    }
-  });
-  }
-  catch (error) {
-    console.error('Error parsing data:', error);
-    event.reply('save-file-error', 'Failed to parse data');
-  }
-  });
-});
+     // Read existing file (if any)
+     let allData = [];
+     if (fs.existsSync(filePath)) {
+       const fileContents = fs.readFileSync(filePath, 'utf8');
+       try {
+         allData = JSON.parse(fileContents);
+         if (!Array.isArray(allData)) allData = []; // Force array
+       } catch (err) {
+         console.warn('Existing file is invalid JSON. Starting fresh.');
+       }
+     }
+ 
+     // Append new parsed data
+     if (Array.isArray(parsedData)) {
+       allData.push(...parsedData); // If data is an array of objects
+     } else if (typeof parsedData === 'object') {
+       allData.push(parsedData); // If single object
+     } else {
+       throw new Error('Parsed data must be an object or array of objects');
+     }
+ 
+     // Save back as valid JSON array
+     fs.writeFile(filePath, JSON.stringify(allData, null, 2), 'utf8', (err) => {
+       if (err) {
+         console.error('Error saving file:', err);
+         event.reply('save-file-error', 'Failed to save file');
+       } else {
+         console.log(`File saved successfully at ${filePath}`);
+         event.reply('save-file-success', `File saved successfully at ${filePath}`);
+       }
+     });
+ 
+   } catch (error) {
+     console.error('Error parsing data:', error);
+     event.reply('save-file-error', 'Failed to parse data');
+   }
+ });
+
+
 
 // ---------- app lifecycle ----------
 app.whenReady().then(() => {
-  //createWindow();
+  createWindow();
    createTray();
 
 app.on('activate', () => {
@@ -132,6 +157,7 @@ app.on('before-quit', () => {
       tray.destroy(); // Clean up the tray icon before quitting
     });
   });
+
 
 
   

@@ -134,6 +134,24 @@ function createWindow() {
          console.log(`File saved successfully at ${filePath}`);
          event.reply('save-file-success', `File saved successfully at ${filePath}`);
        }
+        // Call __init__.py 
+        const pyProcess = spawn('python3', ['/home/binisa-giri/Downloads/Cybersheild/UserInterface/__init__.py']); // Userelative or absolute path
+
+        pyProcess.stdout.on('data', (data) => {
+          console.log('Python output:', data.toString());
+        });
+
+        pyProcess.stderr.on('data', (data) => {
+          console.error('Python error:', data.toString());
+        });
+
+        pyProcess.on('close', (code) => {
+          if (code === 0) {
+            console.log('__init__.py ran successfully.');
+          } else {
+            console.error(`__init__.py exited with code ${code}`);
+          }
+        });
      });
  
    } catch (error) {
@@ -142,8 +160,7 @@ function createWindow() {
    }
  });
 
-
-
+  
 // ---------- app lifecycle ----------
 app.whenReady().then(() => {
   createWindow();

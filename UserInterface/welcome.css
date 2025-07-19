@@ -306,3 +306,15 @@ textarea:focus {
     color: var(--text);
     font-style: italic;
 }
+.result-section {
+    font-family: sans-serif;
+    padding: 10px;
+  }
+  .report-card {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  

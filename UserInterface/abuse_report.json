@@ -31,27 +31,5 @@
             },
             "text_analyze": "wowww"
         }
-    },
-    "18514215991010845": {
-        "original_text": "Starry nights by van gogh",
-        "abuse_report": {
-            "abusive-words_found": [],
-            "sentiment": {
-                "sentiment": "POSITIVE",
-                "confidence": 0.982
-            },
-            "text_analyze": "Starry nights by van gogh"
-        }
-    },
-    "17959954520806555": {
-        "original_text": "sunset creates the most amazing view",
-        "abuse_report": {
-            "abusive-words_found": [],
-            "sentiment": {
-                "sentiment": "POSITIVE",
-                "confidence": 1.0
-            },
-            "text_analyze": "sunset creates the most amazing view"
-        }
     }
 }

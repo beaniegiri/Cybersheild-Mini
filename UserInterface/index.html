@@ -1,69 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8"><meta>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' ; connect-src 'self'; img-src 'self' data:; font-src 'self';">
     <meta
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Cyber Shield</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
-    <link rel="stylesheet" href="welcome.css">
-
-
+  <title>Cyber Shield Home</title>
+  <link rel="stylesheet" href="welcome.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 100px;
+      background-color: #f4f4f4;
+    }
+    .icon-button {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 40px;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #333;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .icon-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+    .icon-button img {
+      width: 80px;
+      height: 80px;
+    }
+    .icon-label {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div style="text-align: center;">
-            <h1>Cyber Shield</h1>
-            <img src="logo.png" alt="Cyber Shield Logo" class="logo-animate" style="height:60px; vertical-align:top; margin-right:15px;">
-        </div>
-    </div>  
-        <div class="analysis-container">
-  <!-- Left Side: Input Section -->
-  <div class="input-section">
-    <div class="section-title">Text Analysis Input</div>
-    <p>Enter text content to analyze for abusive language and sentiment</p>
-    <textarea id="inputText" placeholder="Enter your text here for analysis..."></textarea>
-    
-    <button id="analyzeBtn" class="button">Analyze Text</button>
-    <button id="clearBtn" class="button secondary">Clear</button>
-  </div>
+  <h1>Cyber Shield Dashboard</h1>
 
-  <!-- Right Side: Output Section -->
-  <div class="output-section">
-    <div class="section-title">Analysis Results</div>
-    <p>Real-time detection results and sentiment analysis</p>
-    <div id="results" class="result-section">
-      No analysis results yet<br/>
-      Enter text and click analyze to begin
-    </div>
-  </div>
-</div>  
-        
-        <div class="section">
-            <div class="section-title">DistilBERT Analysis</div>
-            <p>Advanced transformer model for accurate sentiment classification</p>
-            
-            <div class="feature-card">
-                <h3>Real-time Processing</h3>
-                <p>Instant analysis with word embeddings and ML pipeline integration</p>
-            </div>
-            
-            <div class="feature-card">
-                <h3>Content Protection</h3>
-                <p>Comprehensive detection of harmful and inappropriate language</p>
-            </div>
-        </div>
-    </div>
-    <h2>Fetch Data</h2>
-    <input id="token" placeholder="Access Token" size="80"><br><br>
-    <input id="apiUrl" placeholder="API URL" size="100"><br><br>
-    <button id="fetch-btn">Fetch Data</button>
-    <div id="tweet-output" style="white-space: pre-wrap; padding: 10px; border: 1px solid #ccc; margin-top: 10px;">
-      <!-- Fetched data will be shown here -->
-    </div>
+  <a href="cybersheild.html" class="icon-button">
+    <img src="logo.png" alt="Test Cyber Shield">
+    <div class="icon-label">Test Cyber Shield</div>
+  </a>
+
+  <a href="fetchdata.html" class="icon-button">
+    <img src="fetch-icon.png" alt="Fetch Data"> <!-- Replace with your own icon if needed -->
+    <div class="icon-label">Fetch Data</div>
+  </a>
+</body>
+</html>
     
     <script src="welcome.js"></script>
 </body>

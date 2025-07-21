@@ -317,4 +317,26 @@ textarea:focus {
     margin-bottom: 10px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
   }
-  
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  input {
+    margin: 10px;
+    padding: 8px;
+    width: 60%;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #tweet-output {
+    white-space: pre-wrap;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background: #fff;
+  }

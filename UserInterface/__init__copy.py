@@ -24,6 +24,7 @@ def analyze_file(file_path, abusive_words):
         post_id = item.get('id', f'post_{index}')
         text = item.get('text') or item.get('caption')
         if not text:
+            print(f"Skipping post {post_id} — no text or caption found.")
             continue
 
         report = analyze_text(text, abusive_words)
@@ -34,11 +35,11 @@ def analyze_file(file_path, abusive_words):
 
     with open("abuse_report.json", "w", encoding='utf-8') as f:
         json.dump(report_dict, f, indent=4, ensure_ascii=False)
-    print("Batch analysis complete!")
+    print("Batch analysis complete! Report saved to 'abuse_report.json'.")
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--text', type=str, help="Analyze a single text input")
+    parser.add_argument('--text', type=str, help="Analyze a single user-provided text input")
     parser.add_argument('--file', type=str, help="Analyze a JSON file of posts")
     args = parser.parse_args()
 
@@ -46,11 +47,15 @@ def main():
 
     if args.text:
         report = analyze_text(args.text, abusive_words)
-        print(json.dumps(report))  # So Electron can read it
+        print(json.dumps({
+            "original_text": args.text,
+            "abuse_report": report
+        }, ensure_ascii=False))
     elif args.file:
         analyze_file(args.file, abusive_words)
     else:
-        print("No input provided. Use --text or --file.")
+        print("Error: Provide either --text or --file input")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

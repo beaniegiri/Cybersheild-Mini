@@ -19,22 +19,31 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-function analyzeText() {
+async function analyzeText() {
   const text = document.getElementById('inputText').value;
   if (!text.trim()) {
     alert('Please enter some text to analyze');
     return;
   }
 
-  document.getElementById('results').innerHTML = `
-    <strong>Analysis Complete:</strong><br/><br/>
-    <strong>Sentiment:</strong> Positive<br/>
-    <strong>Toxicity Score:</strong> 12%<br/>
-    <strong>Abusive Language Detected:</strong> No<br/>
-    <strong>Key Phrases:</strong> "great experience", "highly recommend"<br/><br/>
-    <em>Note: This is a demo. Real analysis would use DistilBERT or similar model.</em>
-  `;
-}
+  document.getElementById('results').innerHTML = 'Analyzing...';
+
+  try {
+      console.log('Sending text to main process:', text); // Log input text
+      const result = await window.api.analyzeText(text);
+      console.log('Received result from main process:', result); // Log result
+  
+    // Update the results section with the analysis output
+    document.getElementById('results').innerHTML = `
+      <strong>Raw Output:</strong><br/>
+      <pre>${result}</pre>
+    `;
+  } catch (error) {
+    console.error('Error analyzing text:', error);
+    document.getElementById('results').innerHTML = 'An error occurred during analysis.';
+  }
+    }
+
 
 function clearText() {
   document.getElementById('inputText').value = '';

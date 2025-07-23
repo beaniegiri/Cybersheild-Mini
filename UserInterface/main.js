@@ -60,7 +60,32 @@ function createWindow() {
     tray.setContextMenu(contextMenu); // Set the context menu for the tray icon
     console.log('Tray icon created');
   }
-
+  ipcMain.handle('analyze-text', async (event, text) => {
+    const scriptPath = path.join(__dirname, '__init__copy.py'); // Path to the Python script
+    return new Promise((resolve, reject) => {
+      const process = spawn('python3', [scriptPath, '--text', text]); // Spawn a new Python process to run the script with the provided text
+  
+      let output = '';
+      process.stdout.on('data', (data) => {
+        console.log('Python Output:', data.toString()); // Log raw output
+        output += data.toString();
+      });
+  
+      process.stderr.on('data', (err) => {
+        console.error('Python Error:', err.toString());
+      });
+  
+      process.on('close', (code) => {
+        console.log('Python process exited with code:', code);
+        console.log('Raw Output:', output); // Log the raw output
+        if (code === 0) {
+          resolve(output); // Send the raw output to the renderer process
+        } else {
+          reject('Python script exited with code ' + code);
+        }
+      });
+    });
+  });
   // #Task to fetch data from a given API using a Python script
   // This task is triggered by the fetch button in the UI
   

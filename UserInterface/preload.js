@@ -31,4 +31,8 @@ contextBridge.exposeInMainWorld('electronAPI', {
   saveFile: (data, filename) => {
     ipcRenderer.send('save-file', data, filename);
   }
-});
+}),
+
+contextBridge.exposeInMainWorld('api', {
+    analyzeText: (text) => ipcRenderer.invoke('analyze-text', text),
+})

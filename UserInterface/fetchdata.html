@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"><meta>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' ; connect-src 'self'; img-src 'self' data:; font-src 'self';">
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+  <title>Fetch Data</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <h2>Fetch Social Media Data</h2>
+    <p>Enter your access token and API URL to fetch data</p>
+  <input id="token" placeholder="Access Token"><br>
+  <input id="apiUrl" placeholder="API URL"><br>
+  <button id="fetch-btn">Fetch Data</button>
+  <a href ="index.html">
+    <button class="button">Back to Dashboard</button>
+  </a>
+
+  <div id="tweet-output">
+    <!-- Fetched data will appear here -->
+  </div>
+
+   <script src="fetch.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+    "18050898926161754": {
+        "original_text": "Amazing",
+        "abuse_report": {
+            "abusive-words_found": [],
+            "sentiment": {
+                "sentiment": "POSITIVE",
+                "confidence": 1.0
+            },
+            "text_analyze": "Amazing"
+        }
+    },
+    "18312869152215742": {
+        "original_text": "👏there you go",
+        "abuse_report": {
+            "abusive-words_found": [],
+            "sentiment": {
+                "sentiment": "POSITIVE",
+                "confidence": 1.0
+            },
+            "text_analyze": "there you go"
+        }
+    },
+    "18051691619389658": {
+        "original_text": "wowww",
+        "abuse_report": {
+            "abusive-words_found": [],
+            "sentiment": {
+                "sentiment": "POSITIVE",
+                "confidence": 0.997
+            },
+            "text_analyze": "wowww"
+        }
+    },
+    "18514215991010845": {
+        "original_text": "Starry nights by van gogh",
+        "abuse_report": {
+            "abusive-words_found": [],
+            "sentiment": {
+                "sentiment": "POSITIVE",
+                "confidence": 0.982
+            },
+            "text_analyze": "Starry nights by van gogh"
+        }
+    },
+    "17959954520806555": {
+        "original_text": "sunset creates the most amazing view",
+        "abuse_report": {
+            "abusive-words_found": [],
+            "sentiment": {
+                "sentiment": "POSITIVE",
+                "confidence": 1.0
+            },
+            "text_analyze": "sunset creates the most amazing view"
+        }
+    },
+    "17861253225446541": {
+        "original_text": "Just a stupid painting I found somewhere",
+        "abuse_report": {
+            "abusive-words-found": [
+                {
+                    "word_in_text": "stupid",
+                    "matched_with": "stupid",
+                    "similarity": 1.0,
+                    "severity": "high",
+                    "text_analyzed": "Just a stupid painting I found somewhere",
+                    "sentiment": {
+                        "sentiment": "NEGATIVE",
+                        "confidence": 1.0
+                    }
+                }
+            ]
+        }
+    }
+}

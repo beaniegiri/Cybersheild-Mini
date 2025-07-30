@@ -1,7 +1,8 @@
 import json
 from text_sniffer import load_abusive_words, detect_abuse
 
-
+#THis file is excuted after the data is loaded from the social media platform
+# It processes the data to detect abusive content and generates a report.
 
 if __name__ == "__main__":
     # Load abusive words

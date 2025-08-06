@@ -19,6 +19,38 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+function formatProcessedResult(processedResult) {
+  let formatted = '';
+
+  processedResult.forEach((entry) => {
+    const sentimentClass = entry.sentiment.toLowerCase() === 'positive'
+      ? 'sentiment-positive'
+      : entry.sentiment.toLowerCase() === 'negative'
+        ? 'sentiment-negative'
+        : 'sentiment-neutral';
+
+    formatted += `
+      <div class="result-item">
+        <p><strong>Text Analyzed:</strong> ${entry.original_text || 'N/A'}</p>
+        <p><strong>Sentiment:</strong> 
+          <span class="${sentimentClass}">
+            ${entry.sentiment} (${(entry.confidence * 100).toFixed(2)}% confidence)
+          </span>
+        </p>
+        <p><strong>Abusive Words Found:</strong> ${
+          entry.abusive_words.length > 0
+            ? entry.abusive_words.join(', ')
+            : '<span style="color: green;">None</span>'
+        }</p>
+      </div>
+      <hr/>
+    `;
+  });
+
+  console.log('Formatted result:', formatted);
+  return formatted;
+}
+
 async function analyzeText() {
   const text = document.getElementById('inputText').value;
   if (!text.trim()) {
@@ -29,61 +61,52 @@ async function analyzeText() {
   document.getElementById('results').innerHTML = 'Analyzing...';
 
   try {
-      console.log('Sending text to main process:', text); // Log input text
-      const result = await window.api.analyzeText(text);
-      console.log('Received result from main process:', result); // Log result
+    console.log('Sending text to main process:', text);
+    const rawResult = await window.api.analyzeText(text);
+    console.log('Received result from main process:', rawResult);
+    const parsedResult = JSON.parse(rawResult);
+    console.log('Parsed result:', parsedResult);
 
-      // Dynamically insert styled results
-    const abuseReport = result['abuse_report'] || {};
-    const abusiveWords = abuseReport['abusive-words-found'] || [];
-    const sentiment = abuseReport['sentiment'] || {sentiment: 'NEUTRAL', confidence: 0};
+    let processedResult;
 
-    const resultContent = `
-      <div class="result-item">
-        <span>Original Text:</span> ${result['original_text']}
-      </div>
-      <div class="result-item">
-        <span>Sentiment:</span> 
-        <span class="${sentiment.sentiment.toLowerCase() === 'positive' ? 'sentiment-positive' : 'sentiment-negative'}">
-          ${sentiment.sentiment} (${(sentiment.confidence * 100).toFixed(2)}% confidence)
-        </span>
-      </div>
-      <div class="result-item">
-        <span>Abusive Words Found:</span> ${
-          abusiveWords.length > 0
-            ? abusiveWords
-                .map(
-                  (word) => `
-                  <div>
-                    <span>Word:</span> ${word.word_in_text}<br/>
-                    <span>Matched With:</span> ${word.matched_with}<br/>
-                    <span>Similarity:</span> ${(word.similarity * 100).toFixed(2)}%<br/>
-                    <span>Severity:</span> <span class="severity-${word.severity.toLowerCase()}">${word.severity}</span>
-                  </div>
-                `
-                )
-                .join('')
-            : 'None'
+    // Handle both single result and multiple entries
+    if ('original_text' in parsedResult && 'abuse_report' in parsedResult) {
+      const abuseReport = parsedResult.abuse_report || {};
+      const abusiveWordsArray = abuseReport["abusive-words-found"] || abuseReport["abusive-words_found"] || [];
+
+      const fallbackSentiment = abusiveWordsArray[0]?.sentiment?.sentiment || 'UNKNOWN';
+      const fallbackConfidence = abusiveWordsArray[0]?.sentiment?.confidence || 0;
+    
+      processedResult = [
+        {
+          id: 'Single Input',
+          original_text: parsedResult.original_text || '',
+          text_analyzed: abuseReport.text_analyze || abusiveWordsArray[0]?.text_analyzed || parsedResult.original_text || '',
+          sentiment: abuseReport.sentiment?.sentiment || fallbackSentiment,
+          confidence: abuseReport.sentiment?.confidence || fallbackConfidence,
+          abusive_words: abusiveWordsArray.map(wordInfo => wordInfo.word_in_text)
         }
-      </div>
+      ];
+    } else {
+      // processedResult = extractAbuseAndSentimentInfo(parsedResult);
+      console.log('Processed result:', processedResult);
+    }
+
+    const formattedResult = formatProcessedResult(processedResult);
+
+    document.getElementById('results').innerHTML = `
+      <strong>Analysis Results:</strong><br/>
+      ${formattedResult}
     `;
 
-  
-    // Update the results section with the analysis output
-    document.getElementById('results').innerHTML = `
-      <strong>Raw Output:</strong><br/>
-      <pre>${result}</pre>
-    `;
   } catch (error) {
     console.error('Error analyzing text:', error);
     document.getElementById('results').innerHTML = 'An error occurred during analysis.';
   }
-    }
-
+}
 
 function clearText() {
   document.getElementById('inputText').value = '';
   document.getElementById('results').innerHTML =
     'No analysis results yet<br/>Enter text and click analyze to begin';
 }
-
